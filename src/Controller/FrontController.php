@@ -7,9 +7,7 @@ class FrontController
     {
         global $rep, $vues;
         $dViewError = array();
-
         session_start();
-
         try {
             $listAction_Admin = array('admin', 'logout','add', 'addValidation', 'delete', 'modify', 'modifyValidation', 'searchAdmin' );
 
@@ -37,7 +35,8 @@ class FrontController
             }
 
         } catch (PDOException $e) {
-            $dViewError[] =	"Erreur inattendue avec la base de donnée !";
+
+            $dViewError[] =	$e->getMessage();
             require ($rep.$vues['error']);
         } catch (Exception $e)
         {

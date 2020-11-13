@@ -15,9 +15,12 @@ class AnimeGateway {
         $this->con->executeQuery($query, array());
 
         $results = $this->con->getResults();
+
         $listAnime = array();
+
         Foreach ($results as $anime)
             $listAnime[]=new Anime($anime['id'], $anime['name'], $anime['season'], $anime['malLink'], $anime['videoLink']);
+
         return $listAnime;
     }
 
@@ -62,10 +65,12 @@ class AnimeGateway {
 
         $results = $this->con->getResults();
         $listNews=array();
-        Foreach ($results as $news)
-            $listNews[]=new News($news['id'], $news['title'], $news['image'], date($this->formatDate, strtotime($news['date'])), $news['content'], $news['published']);
+        Foreach ($results as $anime)
+            $listNews[]=new Anime($anime['id'], $anime['name'], $anime['season'], $anime['malLink'], $anime['videoLink']);
         return $listNews;
     }
+
+
     public function findNbAnime() : int {
         $query = "SELECT * FROM anime";
 

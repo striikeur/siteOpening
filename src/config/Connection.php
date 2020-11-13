@@ -1,7 +1,9 @@
 <?php
 
+
 class Connection extends PDO
 {
+
     private $stmt;
 
 public function __construct($dsn, $username = null, $password = null, $options = null)

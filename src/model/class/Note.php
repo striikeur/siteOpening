@@ -4,6 +4,7 @@ class Note
 {
     private $id;
     private $animeId;
+    private $userId;
     private $noteVideo;
     private $noteMusique;
     private $noteTotale;
@@ -12,16 +13,21 @@ class Note
      * Note constructor.
      * @param $id
      * @param $animeId
+     * @param $userId
      * @param $noteVideo
      * @param $noteMusique
+     * @param $noteTotale
      */
-    public function __construct($id, $animeId, $noteVideo, $noteMusique)
+    public function __construct($id, $animeId, $userId, $noteVideo, $noteMusique, $noteTotale)
     {
         $this->id = $id;
         $this->animeId = $animeId;
+        $this->userId = $userId;
         $this->noteVideo = $noteVideo;
         $this->noteMusique = $noteMusique;
+        $this->noteTotale = $noteTotale;
     }
+
 
     /**
      * @return mixed
@@ -30,6 +36,15 @@ class Note
     {
         return $this->id;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getUserId(): int
+    {
+        return $this->userId;
+    }
+
 
     /**
      * @return mixed
@@ -62,6 +77,8 @@ class Note
     {
         return $this->noteTotale;
     }
+
+
 
 
 

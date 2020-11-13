@@ -45,7 +45,7 @@ class Anime
     /**
      * @return mixed
      */
-    public function getId(): id
+    public function getId(): int
     {
         return $this->id;
     }

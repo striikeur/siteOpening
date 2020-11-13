@@ -3,20 +3,18 @@
 class User
 {
     private $pseudo;
+    private $role;
     private $note;
-    private $id;
 
     /**
      * User constructor.
      * @param $pseudo
-     * @param $note
      * @param $id
      */
-    public function __construct($pseudo, $note, $id)
+    public function __construct($pseudo, $role)
     {
         $this->pseudo = $pseudo;
-        $this->note = $note;
-        $this->id = $id;
+        $this->role = $role;
     }
 
 
@@ -28,22 +26,31 @@ class User
         return $this->pseudo;
     }
 
+
     /**
      * @return mixed
      */
-    public function getNote(): array
+    public function getRole()
+    {
+        return $this->role;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNote(): ListNote
     {
         return $this->note;
     }
 
-
     /**
-     * @return mixed
+     * @param mixed $note
      */
-    public function getId()
+    public function setNote(ListNote $note)
     {
-        return $this->id;
+        $this->note = $note;
     }
+
 
 
 }

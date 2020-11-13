@@ -2,12 +2,11 @@
 
 class UserController {
     private $nbAnime;
-    private $nbComment;
-    private $nbCommentUser;
 
     function __construct() {
         global $rep,$vues;
         $dViewError = array();
+
 
         $this->nbAnime = AnimeModel::findNbAnime();
 
@@ -16,25 +15,35 @@ class UserController {
                 $action=$_REQUEST['action'];
             }
             else {
-                $action=NULL;
+                $action = NULL;
             }
 
             switch($action) {
-                case NULL: //Pas d'action, appel de la page d'accueil du blog avec toutes les news
-                    $this->Top();
-                    break;
-                case "search": //Appel de la page d'accueil du blog, mais avec les résultats de la recherche comme news
-                    $this->Search($dViewError);
-                    break;
-                case "login": //Appel de la page d'accueil du blog, mais avec les résultats de la recherche comme news
+                case NULL: //Pas d'action, appel de la page de connexion
                     $this->Login();
                     break;
-                case "connection": //Appel de la page d'accueil du blog, mais avec les résultats de la recherche comme news
+                case 'top': // Utilisateur connecté le top peut start
+                    $this->Top();
+                    break;
+                case "search": //Appel de la page du top, mais avec les résultats de la recherche comme anime
+                    $this->Search($dViewError);
+                    break;
+                case "admin": //
+                    $this->LoginAdmin();
+                    break;
+                case "connection": //
                     $this->Connection($dViewError);
                     break;
                 case "coffee":
                     $this->Coffee(); //Easter egg avec l'erreur http 418
                     break;
+                case "bamboozled":
+                    $this->Bamboozled();
+                    break;
+                case "updateNote":
+                    $this->UpdateNotes();
+                    break;
+
                 default: //mauvaise action
                     $dViewError[] =	"Erreur d'appel php.";
                     require ($rep.$vues['error']);
@@ -42,7 +51,9 @@ class UserController {
             }
 
         } catch (PDOException $e) {
-            $dViewError[] =	"Erreur inattendue avec la base de données !";
+
+
+            $dViewError[] =	($e->getFile().' '.$e->getLine().' '.$e->getMessage());
             require ($rep.$vues['error']);
         }
         catch (Exception $e)
@@ -58,24 +69,18 @@ class UserController {
     function Top() {
         global $rep,$vues;
 
-        if (isset($_REQUEST['page'])) {
-            $page = $_REQUEST['page'];
-        }
-        else {
-            $page = 1;
-        }
 
-        Validation::val_page($page);
-
+        $user = UserModel::isUser();
+        $user->setNote(new ListNote(NoteModel::findAllNotesByUser($_SESSION['login'])));
         $nbAnime = AnimeModel::findNbAnime();
         $listAnime = AnimeModel::getAllAnime();
+
         require ($rep.$vues['top']);
     }
 
 
     function Search($dViewError) {
         global $rep,$vues;
-
         if (isset($_POST['search'])) {
             $keyWord=$_POST['search'];
         }
@@ -83,22 +88,51 @@ class UserController {
             $keyWord='';
         }
 
+
         Validation::val_search($keyWord, $dViewError);
 
-        $listNews = AnimeModel::getAnimeByName($keyWord);
-        require ($rep.$vues['top']);
+        $user = UserModel::isUser();
+
+        if ($user == NULL) {
+            require ($rep.$vues['login']);
+        }
+
+        else {
+            $user->setNote(new ListNote(NoteModel::findAllNotesByUser($_SESSION['login'])));
+            $nbAnime = AnimeModel::findNbAnime();
+            $listAnime = AnimeModel::getAnimeByName($keyWord);
+            require ($rep.$vues['top']);
+        }
     }
 
     function Login() {
         global $rep,$vues;
 
-        $admin = AdminModel::isAdmin();
+        $user = UserModel::isUser();
 
-        if ($admin == NULL) {
+
+        if ($user == NULL) {
             require ($rep.$vues['login']);
         }
         else {
-            $listNews = NewsModel::getAllNews();
+            $user->setNote(new ListNote(NoteModel::findAllNotesByUser($_SESSION['login'])));
+            $nbAnime = AnimeModel::findNbAnime();
+            $listAnime = AnimeModel::getAllAnime();
+            require ($rep.$vues['top']);
+        }
+    }
+
+
+    function LoginAdmin() {
+        global $rep,$vues;
+
+        $user = UserModel::isUser();
+
+        if ($user == NULL) {
+            require ($rep.$vues['login']);
+        }
+        else {
+            $listNews = AnimeModel::getAllAnime();
             require ($rep.$vues['admin']);
         }
     }
@@ -123,11 +157,11 @@ class UserController {
         Validation::val_connection($pseudo, $password, $dViewError);
 
         if (count($dViewError) == 0) {
-            $isAdmin = AdminModel::connection($pseudo, $password);
+            $isUser = UserModel::connection($pseudo, $password);
 
-            switch($isAdmin) {
+            switch($isUser) {
                 case 1:
-                    header('Location: ?action=admin');
+                    header('Location: ?action=top');
                     break;
                 case 0:
                     $dViewError[] =	"Le pseudo et le mot de passe ne correspondent pas ou l'administrateur n'est pas dans notre base de donnée.";
@@ -141,6 +175,20 @@ class UserController {
         }
         else {
             require ($rep.$vues['login']);
+        }
+    }
+
+    function Bamboozled(){
+        global $rep,$vues;
+        $dViewError[] = "You just got Bamboozled";
+        require($rep.$vues['error']);
+
+    }
+    function UpdateNotes(){
+        if( isset($_POST['noteMusique']) && isset($_POST['noteVideo']) && isset($_POST['noteFinale']) && isset($_POST['idAnime']) ){
+
+            NoteModel::updateNote($_POST['noteVideo'], $_POST['noteMusique'],$_POST['noteFinale'], $_POST['idAnime']);
+
         }
     }
 
