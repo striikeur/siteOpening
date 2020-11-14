@@ -1,11 +1,10 @@
 <?php
 $rep = __DIR__.'/../';
 
-
 require_once("Connection.php");
 
 
-$dsn = 'mysql:host=localhost;dbname=opening';
+$dsn = 'mysql:host=localhost;dbname=openingBDD';
 $user = 'root';
 $password= '';
 

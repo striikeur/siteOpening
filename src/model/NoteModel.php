@@ -59,7 +59,7 @@ class NoteModel
         global $dsn, $user, $password;
 
         $noteGate = new NoteGateway(new Connection($dsn, $user, $password));
-        $noteGate->updateNote($noteVideo,$noteMusique,$noteTotale,$idAnime, $_SESSION['login']);
+        $noteGate->updateNote($noteVideo, $noteMusique, $noteTotale, $idAnime, $_SESSION['login']);
 
     }
 

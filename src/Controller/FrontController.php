@@ -1,6 +1,4 @@
 <?php
-
-
 class FrontController
 {
     function __construct()
