@@ -1,0 +1,10 @@
+main {
+	background: #ffffff;
+	max-width: 1000px;
+	margin: auto;
+	padding: 50px;
+}
+
+main section {
+	padding: 25px;
+}

@@ -1,0 +1,401 @@
+[
+    {
+        "name" : "Darwin's game",
+        "malLink" : "https://myanimelist.net/anime/38656/Darwins_Game",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Darmin_s_game.jpg",
+        "videoLink" : "../res/opening/Winter/Darmin_s_game.mp4"
+    },
+    {
+        "name" : "Haikyuu!!: To the Top",
+        "malLink" : "https://myanimelist.net/anime/38883/Haikyuu__To_the_Top",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/haikyuu_to_the_top.jpg",
+        "videoLink" : "../res/opening/Winter/haikyuu_to_the_top.mp4"
+    },
+    {
+        "name" : "Ishuzoku Reviewers",
+        "malLink" : "https://myanimelist.net/anime/40010/Ishuzoku_Reviewers",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/ishuzoku.jpg",
+        "videoLink" : "../res/opening/Winter/ishuzoku.mp4"
+    },
+    {
+        "name" : "Itai no wa Iya nano de Bougyoryoku ni Kyokufuri Shitai to Omoimasu.",
+        "malLink" : "https://myanimelist.net/anime/38790/Itai_no_wa_Iya_nano_de_Bougyoryoku_ni_Kyokufuri_Shitai_to_Omoimasu",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Bofuri.jpg",
+        "videoLink" : "../res/opening/Winter/Bofuri.mp4"
+    },
+    {
+        "name" : "In/Spectre",
+        "malLink" : "https://myanimelist.net/anime/39017/Kyokou_Suiri",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/in_spectre.jpg",
+        "videoLink" : "../res/opening/Winter/in_spectre.mp4"
+    },
+    {
+        "name" : "Jibaku Shounen Hanako-kun",
+        "malLink" : "https://myanimelist.net/anime/39534/Jibaku_Shounen_Hanako-kun",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Jibaku_Shounen_Hanako-kun.jpg",
+        "videoLink" : "../res/opening/Winter/Jibaku_Shounen_Hanako-kun.mp4"
+    },
+    {
+        "name" : "Dorohedoro",
+        "malLink" : "https://myanimelist.net/anime/38668/Dorohedoro",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Dorohedoro.jpg",
+        "videoLink" : "../res/opening/Winter/Dorohedoro.mp4"
+    },
+    {
+        "name" : "Plunderer op 1",
+        "malLink" : "https://myanimelist.net/anime/37345/Plunderer",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Plunderer.jpg",
+        "videoLink" : "../res/opening/Winter/Plunderer_op_1.mp4"
+    },
+    {
+        "name" : "Plunderer Op 2",
+        "malLink" : "https://myanimelist.net/anime/37345/Plunderer",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Plunderer.jpg",
+        "videoLink" : "../res/opening/Winter/Plunderer_op_2.mp4"
+    },
+    {
+        "name" : "Eizouken ni wa Te wo Dasu na",
+        "malLink" : "https://myanimelist.net/anime/39792/Eizouken_ni_wa_Te_wo_Dasu_na",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Eizouken_ni_wa_Te_wo_Dasu_na.jpg",
+        "videoLink" : "../res/opening/Winter/Eizouken_ni_wa_Te_wo_Dasu_na.mp4"
+    },
+    {
+        "name" : "Id:Invaded",
+        "malLink" : "https://myanimelist.net/anime/40046/Id_Invaded",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Id_Invaded.jpg",
+        "videoLink" : "../res/opening/Winter/Id_Invaded.mp4"
+    },
+    {
+        "name" : "Somali and the spirit forest",
+        "malLink" : "https://myanimelist.net/anime/39575/Somali_to_Mori_no_Kamisama",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Somali_to_Mori_no_Kamisama.jpg",
+        "videoLink" : "../res/opening/Winter/Somali_to_Mori_no_Kamisama.mp4"
+    },
+    {
+        "name" : "Isekai Quartet 2",
+        "malLink" : "https://myanimelist.net/anime/39988/Isekai_Quartet_2",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Isekai_Quartet_2.jpg",
+        "videoLink" : "../res/opening/Winter/Isekai_Quartet_2.mp4"
+    },
+    {
+        "name" : "Toaru Kagaku no Railgun T op 1",
+        "malLink" : "https://myanimelist.net/anime/38481/Toaru_Kagaku_no_Railgun_T",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Toaru_Kagaku_no_Railgun_T.jpg",
+        "videoLink" : "../res/opening/Winter/Toaru_Kagaku_no_Railgun_T_op_1.mp4"
+    },
+    {
+        "name" : "Toaru Kagaku no Railgun T op 2",
+        "malLink" : "https://myanimelist.net/anime/38481/Toaru_Kagaku_no_Railgun_T",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Toaru_Kagaku_no_Railgun_T.jpg",
+        "videoLink" : "../res/opening/Winter/Toaru_Kagaku_no_Railgun_T_op_2.mp4"
+    },
+    {
+        "name" : "Murenase! Seton Gakuen",
+        "malLink" : "https://myanimelist.net/anime/40483/Murenase_Seton_Gakuen",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Murenase_Seton_Gakuen.jpg",
+        "videoLink" : "../res/opening/Winter/Murenase_Seton_Gakuen.mp4"
+    },
+    {
+        "name" : "Infinite Dendogram",
+        "malLink" : "https://myanimelist.net/anime/38909/Infinite_Dendrogram",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Infinite_Dendrogram.jpg",
+        "videoLink" : "../res/opening/Winter/Infinite_Dendrogram.mp4"
+    },
+    {
+        "name" : "Magia record : Mahou Shoujou Madoka Magica Gaiden",
+        "malLink" : "https://myanimelist.net/anime/38256/Magia_Record__Mahou_Shoujo_Madoka%E2%98%86Magica_Gaiden_TV",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Magia_Record__Mahou_Shoujo_Madoka_Magica_Gaiden_TV",
+        "videoLink" : "../res/opening/Winter/Magia_Record__Mahou_Shoujo_Madoka_Magica_Gaiden_TV.mp4"
+    },
+    {
+        "name" : "Nekopara",
+        "malLink" : "https://myanimelist.net/anime/38924/Nekopara",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Nekopara.jpg",
+        "videoLink" : "../res/opening/Winter/Nekopara.mp4"
+    },
+    {
+        "name" : "Runway de waratte",
+        "malLink" : "https://myanimelist.net/anime/40392/Runway_de_Waratte",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Runway_de_Waratte.jpg",
+        "videoLink" : "../res/opening/Winter/Runway_de_Waratte.mp4"
+    },
+    {
+        "name" : "Pet",
+        "malLink" : "https://myanimelist.net/anime/37522/Pet",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Pet.jpg",
+        "videoLink" : "../res/opening/Winter/Pet.mp4"
+    },
+    {
+        "name" : "Heya Camp△",
+        "malLink" : "https://myanimelist.net/anime/38476/Heya_Camp%E2%96%B3",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Heya_Camp.jpg",
+        "videoLink" : "../res/opening/Winter/Heya_Camp.mp4"
+    },
+    {
+        "name" : "Koisuru Asteroid",
+        "malLink" : "https://myanimelist.net/anime/39388/Koisuru_Asteroid",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Koisuru_Asteroid.jpg",
+        "videoLink" : "../res/opening/Winter/Koisuru_Asteroid.mp4"
+    },
+    {
+        "name" : "Majutsushi Orphen Hagure Tabi",
+        "malLink" : "https://myanimelist.net/anime/37576/Majutsushi_Orphen_Hagure_Tabi",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Majutsushi_Orphen_Hagure_Tabi.jpg",
+        "videoLink" : "../res/opening/Winter/Majutsushi_Orphen_Hagure_Tabi.mp4"
+    },
+    {
+        "name" : "Housekishou Richard-shi no Nazo Kantei",
+        "malLink" : "https://myanimelist.net/anime/40230/Housekishou_Richard-shi_no_Nazo_Kantei",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Housekishou_Richard-shi_no_Nazo_Kantei.jpg",
+        "videoLink" : "../res/opening/Winter/Housekishou_Richard-shi_no_Nazo_Kantei.mp4"
+    },
+    {
+        "name" : "Boku no Tonari ni Ankoku Hakaishin ga Imasu.",
+        "malLink" : "https://myanimelist.net/anime/38302/Boku_no_Tonari_ni_Ankoku_Hakaishin_ga_Imasu",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Boku_no_Tonari_ni_Ankoku_Hakaishin_ga_Imasu.jpg",
+        "videoLink" : "../res/opening/Winter/Boku_no_Tonari_ni_Ankoku_Hakaishin_ga_Imasu.mp4"
+    },
+    {
+        "name" : "Hatena Illusion",
+        "malLink" : "https://myanimelist.net/anime/35252/Hatena%E2%98%86Illusion",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Hatena_Illusion.jpg",
+        "videoLink" : "../res/opening/Winter/Hatena_Illusion.mp4"
+    },
+    {
+        "name" : "22/7",
+        "malLink" : "https://myanimelist.net/anime/40148/22_7",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/22_7.jpg",
+        "videoLink" : "../res/opening/Winter/22_7.mp4"
+    },
+    {
+        "name" : "Oshi ga budoukan Ittekuretara",
+        "malLink" : "https://myanimelist.net/anime/37890/Oshi_ga_Budoukan_Ittekuretara_Shinu",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Oshi_ga_Budoukan_Ittekuretara_Shinu.jpg",
+        "videoLink" : "../res/opening/Winter/Oshi_ga_Budoukan_Ittekuretara_Shinu.mp4"
+    },
+    {
+        "name" : "number24",
+        "malLink" : "https://myanimelist.net/anime/39583/number24",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/number24.jpg",
+        "videoLink" : "../res/opening/Winter/number24.mp4"
+    },
+    {
+        "name" : "Bang Dream! 3rd Season",
+        "malLink" : "https://myanimelist.net/anime/37870/BanG_Dream_3rd_Season",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/BanG_Dream_3rd_Season.jpg",
+        "videoLink" : "../res/opening/Winter/BanG_Dream_3rd_Season.mp4"
+    },
+    {
+        "name" : "A3! Season Spring & Summer",
+        "malLink" : "https://myanimelist.net/anime/39184/A3_Season_Spring___Summer",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/A3_Season_Spring___Summer.jpg",
+        "videoLink" : "../res/opening/Winter/A3_Season_Spring___Summer.mp4"
+    },
+    {
+        "name" : "Uchi Tama?! Uchi no Tama Shirimasen ka",
+        "malLink" : "https://myanimelist.net/anime/39942/Uchi_Tama_Uchi_no_Tama_Shirimasen_ka",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Uchi_Tama_Uchi_no_Tama_Shirimasen_ka.jpg",
+        "videoLink" : "../res/opening/Winter/Uchi_Tama_Uchi_no_Tama_Shirimasen_ka.mp4"
+    },
+    {
+        "name" : "Oda Cinnamon Nobunaga",
+        "malLink" : "https://myanimelist.net/anime/40136/Oda_Cinnamon_Nobunaga",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Oda_Cinnamon_Nobunaga.jpg",
+        "videoLink" : "../res/opening/Winter/Oda_Cinnamon_Nobunaga.mp4"
+    },
+    {
+        "name" : "Show By Rock!! Mashumairesh!!",
+        "malLink" : "https://myanimelist.net/anime/40763/Show_By_Rock_Mashumairesh",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Show_By_Rock_Mashumairesh.jpg",
+        "videoLink" : "../res/opening/Winter/Show_By_Rock_Mashumairesh.mp4"
+    },
+    {
+        "name" : "Breakers",
+        "malLink" : "https://myanimelist.net/anime/40850/Breakers",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Breakers.jpg",
+        "videoLink" : "../res/opening/Winter/Breakers.mp4"
+    },
+    {
+        "name" : "Healin' Good♡Precure",
+        "malLink" : "https://myanimelist.net/anime/40610/Healin_Good%E2%99%A1Precure",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Healin_Good_Precure",
+        "videoLink" : "../res/opening/Winter/Healin_Good_Precure.mp4"
+    },
+    {
+        "name" : "ARP Backstage Pass",
+        "malLink" : "https://myanimelist.net/anime/40137/ARP_Backstage_Pass",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/ARP_Backstage_Pass.jpg",
+        "videoLink" : "../res/opening/Winter/ARP_Backstage_Pass.mp4"
+    },
+    {
+        "name" : "One Piece",
+        "malLink" : "https://myanimelist.net/anime/21/One_Piece",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/One_Piece.jpg",
+        "videoLink" : "../res/opening/Winter/One_Piece.mp4"
+    },
+    {
+        "name" : "Boku no Hero Academia 4th Season",
+        "malLink" : "https://myanimelist.net/anime/38408/Boku_no_Hero_Academia_4th_Season",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Boku_no_Hero_Academia_4th_Season.jpg",
+        "videoLink" : "../res/opening/Winter/Boku_no_Hero_Academia_4th_Season.mp4"
+    },
+    {
+        "name" : "Black Clover op 1",
+        "malLink" : "https://myanimelist.net/anime/34572/Black_Clover",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Black_Clover.jpg",
+        "videoLink" : "../res/opening/Winter/Black_Clover_op_1.mp4"
+    },
+    {
+        "name" : "Black Clover op 2",
+        "malLink" : "https://myanimelist.net/anime/34572/Black_Clover",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Black_Clover.jpg",
+        "videoLink" : "../res/opening/Winter/Black_Clover_op_2.mp4"
+    },
+    {
+        "name" : "Black Clover op 3",
+        "malLink" : "https://myanimelist.net/anime/34572/Black_Clover",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Black_Clover.jpg",
+        "videoLink" : "../res/opening/Winter/Black_Clover_op_3.mp4"
+    },
+    {
+        "name" : "Boruto: Naruto Next Generations",
+        "malLink" : "https://myanimelist.net/anime/34566/Boruto__Naruto_Next_Generations",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Boruto__Naruto_Next_Generations.jpg",
+        "videoLink" : "../res/opening/Winter/Boruto__Naruto_Next_Generations.mp4"
+    },
+    {
+        "name" : "Nanatsu no Taizai: Kamigami no Gekirin",
+        "malLink" : "https://myanimelist.net/anime/39701/Nanatsu_no_Taizai__Kamigami_no_Gekirin",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Nanatsu_no_Taizai__Kamigami_no_Gekirin.jpg",
+        "videoLink" : "../res/opening/Winter/Nanatsu_no_Taizai__Kamigami_no_Gekirin.mp4"
+    },
+    {
+        "name" : "Detective Conan Op 1",
+        "malLink" : "https://myanimelist.net/anime/235/Detective_Conan",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Detective_Conan.jpg",
+        "videoLink" : "../res/opening/Winter/Detective_Conan_op_1.mp4"
+    },
+    {
+        "name" : "Detective Conan Op 2",
+        "malLink" : "https://myanimelist.net/anime/235/Detective_Conan",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Detective_Conan.jpg",
+        "videoLink" : "../res/opening/Winter/Detective_Conan_op_2.mp4"
+    },
+    {
+        "name" : "Ahiru no Sora op 1",
+        "malLink" : "https://myanimelist.net/anime/37403/Ahiru_no_Sora",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Ahiru_no_Sora.jpg",
+        "videoLink" : "../res/opening/Winter/Ahiru_no_Sora_op_1.mp4"
+    },
+    {
+        "name" : "Ahiru no Sora op 2",
+        "malLink" : "https://myanimelist.net/anime/37403/Ahiru_no_Sora",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Ahiru_no_Sora.jpg",
+        "videoLink" : "../res/opening/Winter/Ahiru_no_Sora_op_2.mp4"
+    },
+    {
+        "name" : "Ahiru no Sora op 3",
+        "malLink" : "https://myanimelist.net/anime/37403/Ahiru_no_Sora",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Ahiru_no_Sora.jpg",
+        "videoLink" : "../res/opening/Winter/Ahiru_no_Sora_op_3.mp4"
+    },
+    {
+        "name" : "Phantasy Star Online 2: Episode Oracle",
+        "malLink" : "https://myanimelist.net/anime/39506/Phantasy_Star_Online_2__Episode_Oracle",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Phantasy_Star_Online_2__Episode_Oracle.jpg",
+        "videoLink" : "../res/opening/Winter/Phantasy_Star_Online_2__Episode_Oracle.mp4"
+    },
+    {
+        "name" : "Rikei ga Koi ni Ochita no de Shoumei shitemita.",
+        "malLink" : "https://myanimelist.net/anime/38992/Rikei_ga_Koi_ni_Ochita_no_de_Shoumei_shitemita",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Rikei_ga_Koi_ni_Ochita_no_de_Shoumei_shitemita.jpg",
+        "videoLink" : "../res/opening/Winter/Rikei_ga_Koi_ni_Ochita_no_de_Shoumei_shitemita.mp4"
+    },
+    {
+        "name" : "Mushikago no Cagaster",
+        "malLink" : "https://myanimelist.net/anime/38663/Mushikago_no_Cagaster",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Mushikago_no_Cagaster.jpg",
+        "videoLink" : "../res/opening/Winter/Mushikago_no_Cagaster.mp4"
+    },
+    {
+        "name" : "Kuutei Dragons",
+        "malLink" : "https://myanimelist.net/anime/39531/Kuutei_Dragons",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Kuutei_Dragons.jpg",
+        "videoLink" : "../res/opening/Winter/Kuutei_Dragons.mp4"
+    },
+    {
+        "name" : "Jie Yao",
+        "malLink" : "https://myanimelist.net/anime/41051/Jie_Yao",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Jie_Yao.jpg",
+        "videoLink" : "../res/opening/Winter/Jie_Yao.mp4"
+    },
+    {
+        "name" : "Zenonzard The Animation",
+        "malLink" : "https://myanimelist.net/anime/40940/Zenonzard_The_Animation",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Zenonzard_The_Animation.jpg",
+        "videoLink" : "../res/opening/Winter/Zenonzard_The_Animation.mp4"
+    },
+    {
+        "name" : "Psycho-Pass 3: First Inspector",
+        "malLink" : "https://myanimelist.net/anime/40858/Psycho-Pass_3__First_Inspector",
+        "season" : "Winter",
+        "miniature" : "../res/miniature/Winter/Psycho-Pass_3__First_Inspector.jpg",
+        "videoLink" : "../res/opening/Winter/Psycho-Pass_3__First_Inspector.mp4"
+    }
+]
