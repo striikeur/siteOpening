@@ -27,15 +27,10 @@ require_once(__DIR__.'/model/gateway/UserGateway.php');
 
 
 
-$passwd = password_hash("NvASBQ^j1UeE", PASSWORD_BCRYPT);
-echo ($passwd);
-if(password_verify("NvASBQ^j1UeE", $passwd)){
-    echo "c'est ok";
-}
 
 
 
 Autoload::charger();
 
-/*
+
 $cont = new FrontController();
