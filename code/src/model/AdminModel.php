@@ -1,11 +1,11 @@
 <?php
-
+require_once (__DIR__.'/class/Admin.php');
 class AdminModel
 {
     static function connection(string $pseudo, string $pass) : int {
         global $dsn, $user, $password;
 
-        $adminG = new AdminGateway(new Connection($dsn, $user, $password));
+        $adminG = new AdminGateway();
 
         if ($adminG->findAdmin($pseudo, $pass) == 1) {
             $_SESSION['login'] = $pseudo;

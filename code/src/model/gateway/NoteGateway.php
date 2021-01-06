@@ -3,14 +3,10 @@
 class NoteGateway
 {
     private $con;
-
-    /**
-     * NoteGateway constructor.
-     * @param $con
-     */
-    public function __construct(Connection $con)
+    public function __construct()
     {
-        $this->con = $con;
+        global $connection;
+        $this->con = $connection;
     }
 
     public function findAllNotes(): array {
@@ -29,6 +25,33 @@ class NoteGateway
             $listeNote[]=new Note($note['id'], $note['idAnime'], $note['idUser'], $note['noteVideo'], $note['noteMusique'], $note['noteTotale']);
         }
         return $listeNote;
+
+    }
+    public function createNotes(string $username){
+        $query = "SELECT * FROM user WHERE pseudo=:pseudo";
+        $this->con->executeQuery($query, array(
+            ':pseudo' => array($username, PDO::PARAM_STR)
+        ));
+
+        $user = $this->con->getResults();
+        if(count($user) != 1 ){
+            return -1;
+        }
+        $query = "SELECT * FROM anime";
+        $this->con->executeQuery($query, array());
+        $animes = $this->con->getResults();
+
+        foreach ($animes as $anime) {
+            $query = "SELECT COUNT(*) FROM note where idAnime=:idAnime AND idUser=:idUser";
+            $this->con->executeQuery($query, array(
+                ':idAnime' => array($anime['id'], PDO::PARAM_INT),
+                ':idUser' => array($user[0]['id'], PDO::PARAM_INT)
+            ));
+            $count = $this->con->getResults();
+            if($count[0][0] == '0'){
+                $this->createNote($anime['name'], $username);
+            }
+        }
 
     }
 
@@ -57,6 +80,26 @@ class NoteGateway
         }
         return $listeNote;
 
+    }
+
+    public function countNotesByUser(string $pseudo){
+        $query = "SELECT * FROM user WHERE pseudo=:pseudo";
+        $this->con->executeQuery($query, array(
+            ':pseudo' => array($pseudo, PDO::PARAM_STR)
+        ));
+
+        $user = $this->con->getResults();
+        if(count($user) != 1 ){
+            return -1;
+        }
+        $query = "SELECT COUNT(*) FROM note WHERE idUser=:idUser";
+
+        $this->con->executeQuery($query, array(
+            ":idUser" => array($user[0]['id'], PDO::PARAM_INT)
+        ));
+
+        $results = $this->con->getResults();
+        return $results;
     }
 
     public function findAllNotesByUserNotNoted(string $pseudo) {

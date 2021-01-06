@@ -3,8 +3,9 @@
 class AdminGateway {
     private $con;
 
-    public function __construct(Connection $con) {
-        $this->con = $con;
+    public function __construct() {
+        global $connection;
+        $this->con = $connection;
     }
 
     public function findAdmin(string $pseudo, string $password) : int {

@@ -1,12 +1,10 @@
 <?php
+require_once(__DIR__.'/../model/class/ListNote.php');
 
 class UserController {
-
     function __construct() {
         global $rep,$vues;
         $dViewError = array();
-
-
         try {
             if (isset($_REQUEST['action'])) {
                 $action=$_REQUEST['action'];
@@ -14,7 +12,6 @@ class UserController {
             else {
                 $action = NULL;
             }
-
             switch($action) {
                 case NULL: //Pas d'action, appel de la page de connexion
                     $this->Login();
@@ -55,113 +52,78 @@ class UserController {
                 case "notNoted":
                     $this->notNoted();
                     break;
-
                 default: //mauvaise action
                     $dViewError[] =	"Erreur d'appel php.";
                     require ($rep.$vues['error']);
                     break;
             }
-
         } catch (PDOException $e) {
-
-
             $dViewError[] =	($e->getFile().' '.$e->getLine().' '.$e->getMessage());
             require ($rep.$vues['error']);
-
         }
         catch (Exception $e)
         {
-
             $dViewError[] =	"Erreur inattendue !";
             require ($rep.$vues['error']);
-
         }
-
         exit(0);
     }
-
-
     function Top() {
         global $rep,$vues;
-
         $_SESSION['origine'] = 'top';
-
         if (isset($_REQUEST['page'])) {
             $page = $_REQUEST['page'];
         }
         else {
             $page = 1;
         }
-
         $user = UserModel::isUser();
-        $this->setView($user, $rep, $vues, $page);
+        if($user == NULL){
+            require ($rep.$vues['login']);
+        } else {
+            $this->setView($user, $rep, $vues, $page);
+        }
     }
 
 
     function Search($dViewError) {
-
         global $rep,$vues;
-
         $_SESSION['origine'] = 'search';
-
         if (isset($_POST['search'])) {
             $keyWord=$_POST['search'];
         }
         else {
-
             $keyWord='';
-
         }
-
-
         Validation::val_search($keyWord, $dViewError);
-
         $user = UserModel::isUser();
-
         if ($user == NULL) {
             require ($rep.$vues['login']);
         }
         else {
-
             if (isset($_REQUEST['page'])) {
                 $page = $_REQUEST['page'];
             } else {
                 $page = 1;
             }
-
             $user->setNote(new ListNote(NoteModel::findAllNotesByUser($_SESSION['login'])));
             $user->setNbAnimePage(UserModel::getUserNbAnimePage($_SESSION['login']));
-
             $listAnime = AnimeModel::getAnimeByName($keyWord, $user->getNbAnimePage(), $page);
-
             $nbAnime = count($listAnime);
-
             $nbPages = ceil($nbAnime / $user->getNbAnimePage());
-
             require ($rep.$vues['top']);
-
-
         }
     }
 
     function Login() {
-
         global $rep,$vues;
-
         $user = UserModel::isUser();
-
-
         if ($user == NULL) {
-
             require ($rep.$vues['login']);
         }
-
         else {
-
             if(isset($_SESSION['origine'])){
-
                 switch ($_SESSION['origine']){
-
                     case 'top':
                         $_SESSION['origine'] = null;
                         $this->Top();
@@ -170,24 +132,18 @@ class UserController {
                         $_SESSION['origine'] = null;
                         $this->season($_SESSION['season']);;
                         break;
-
                     case 'notNoted':
                         $_SESSION['origine'] = null;
                         $this->notNoted();
                         break;
-
                     case 'search':
                         $dViewError = array();
                         $_SESSION['origine'] = null;
                         $this->Search($dViewError);
                         break;
-
                 }
-
             }
-
             else {
-
                 if (isset($_REQUEST['page'])) {
                     $page = $_REQUEST['page'];
                 } else {
@@ -197,13 +153,9 @@ class UserController {
             }
         }
     }
-
-
     function LoginAdmin() {
         global $rep,$vues;
-
         $user = UserModel::isUser();
-
         if ($user == NULL) {
             require ($rep.$vues['login']);
         }
@@ -212,29 +164,23 @@ class UserController {
             require ($rep.$vues['admin']);
         }
     }
-
     function Connection($dViewError) {
         global $rep,$vues;
-
         if (isset($_POST['pseudo'])) {
             $pseudo=$_POST['pseudo'];
         }
         else {
             $pseudo='';
         }
-
         if (isset($_POST['password'])) {
             $password=$_POST['password'];
         }
         else {
             $password='';
         }
-
         Validation::val_connection($pseudo, $password, $dViewError);
-
         if (count($dViewError) == 0) {
             $isUser = UserModel::connection($pseudo, $password);
-
             switch($isUser) {
                 case 1:
                     header('Location: ?action=top');
@@ -258,92 +204,79 @@ class UserController {
         global $rep,$vues;
         $dViewError[] = "You just got Bamboozled";
         require($rep.$vues['error']);
-
     }
     function UpdateNotes(){
         if( isset($_POST['noteMusique']) && isset($_POST['noteVideo']) && isset($_POST['noteFinale']) && isset($_POST['idAnime']) ){
-
             NoteModel::updateNote($_POST['noteVideo'], $_POST['noteMusique'],$_POST['noteFinale'], $_POST['idAnime']);
-
         }
     }
-
     function Coffee() {
         global $rep,$vues;
-
         require ($rep.$vues['error-418']);
     }
-
     /**
      * @param User $user
      */
     public function setView(User $user, $rep, $vues, $page)
     {
-
+        if(NoteModel::countNotesByUser($_SESSION['login']) != AnimeModel::countAnime()){
+            NoteModel::createNotes($_SESSION['login']);
+        }
         $user->setNote(new ListNote(NoteModel::findAllNotesByUser($_SESSION['login'])));
+
         $user->setNbAnimePage(UserModel::getUserNbAnimePage($_SESSION['login']));
-        $nbAnime = AnimeModel::findNbAnime();
+        $nbAnime = AnimeModel::countAnime();
         $nbPages = ceil($nbAnime / $user->getNbAnimePage());
         $listAnime = AnimeModel::getAllAnimeByPage($user->getNbAnimePage(), $page);
         require ($rep.$vues['top']);
-
     }
 
     public function season(string $season){
         $_SESSION['origine'] = 'season';
         $_SESSION['season'] = $season;
-
-
         global $rep,$vues;
-
         $user = UserModel::isUser();
-
-        if (isset($_REQUEST['page'])) {
-            $page = $_REQUEST['page'];
+        if($user == NULL){
+            require ($rep.$vues['login']);
+        } else {
+            if (isset($_REQUEST['page'])) {
+                $page = $_REQUEST['page'];
+            } else {
+                $page = 1;
+            }
+            $user->setNote(new ListNote(NoteModel::findAllNotesByUser($_SESSION['login'])));
+            $user->setNbAnimePage(UserModel::getUserNbAnimePage($_SESSION['login']));
+            $nbAnime = AnimeModel::findNbAnimeBySeason($season);
+            $nbPages = ceil($nbAnime / $user->getNbAnimePage());
+            $listAnime = AnimeModel::findAllAnimeBySeasonByPage($season, $user->getNbAnimePage(), $page);
+            require($rep . $vues['top']);
         }
-        else {
-            $page = 1;
-        }
-
-        $user->setNote(new ListNote(NoteModel::findAllNotesByUser($_SESSION['login'])));
-        $user->setNbAnimePage(UserModel::getUserNbAnimePage($_SESSION['login']));
-        $nbAnime = AnimeModel::findNbAnimeBySeason($season);
-        $nbPages = ceil($nbAnime / $user->getNbAnimePage());
-        $listAnime = AnimeModel::findAllAnimeBySeasonByPage($season , $user->getNbAnimePage(), $page);
-
-        require ($rep.$vues['top']);
-
-
-
     }
 
     public function notNoted(){
         global $rep,$vues;
-
         $_SESSION['origine'] = 'notNoted';
-
         $user = UserModel::isUser();
-
-        if (isset($_REQUEST['page'])) {
-            $page = $_REQUEST['page'];
-        }
-        else {
-            $page = 1;
-        }
-
-        $user->setNote(new ListNote(NoteModel::findAllNotesByUserNotNoted($_SESSION['login'])));
-        $user->setNbAnimePage(UserModel::getUserNbAnimePage($_SESSION['login']));
-        $nbAnime = count($user->getNote()->getLesNotes());
-        $nbPages = ceil($nbAnime / $user->getNbAnimePage());
-        $index = $user->getNbAnimePage() * ($page-1);
-
-        for ($i = $index; $i< $index +3 ; $i++){
-            if($i < count($user->getNote()->getLesNotes())) {
-                $note = $user->getNote()->getLesNotes()[$i];
-                $listAnime[] = AnimeModel::getAnimeById($note->getAnimeId());
+        if($user == NULL){
+            require ($rep.$vues['login']);
+        } else {
+            if (isset($_REQUEST['page'])) {
+                $page = $_REQUEST['page'];
+            } else {
+                $page = 1;
             }
+            $user->setNote(new ListNote(NoteModel::findAllNotesByUserNotNoted($_SESSION['login'])));
+            $user->setNbAnimePage(UserModel::getUserNbAnimePage($_SESSION['login']));
+            $nbAnime = count($user->getNote()->getLesNotes());
+            $nbPages = ceil($nbAnime / $user->getNbAnimePage());
+            $index = $user->getNbAnimePage() * ($page - 1);
+            for ($i = $index; $i < $index + 3; $i++) {
+                if ($i < count($user->getNote()->getLesNotes())) {
+                    $note = $user->getNote()->getLesNotes()[$i];
+                    $listAnime[] = AnimeModel::getAnimeById($note->getAnimeId());
+                }
+            }
+            require($rep . $vues['top']);
         }
-        require ($rep.$vues['top']);
-
     }
 }

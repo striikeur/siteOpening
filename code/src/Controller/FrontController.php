@@ -1,4 +1,5 @@
 <?php
+require_once (__DIR__.'/UserController.php');
 class FrontController
 {
     function __construct()
@@ -17,7 +18,6 @@ class FrontController
             else {
                 $action=NULL;
             }
-
             if (in_array($action, $listAction_Admin)) {
                 switch ($admin) {
                     case NULL:

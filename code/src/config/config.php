@@ -8,6 +8,8 @@ $dsn = 'mysql:host=localhost;dbname=openingBDD';
 $user = 'root';
 $password= '';
 
+$connection = new Connection($dsn, $user, $password);
+
 
 
 $vues['video']='view/video.php';

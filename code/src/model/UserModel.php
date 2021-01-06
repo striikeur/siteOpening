@@ -1,10 +1,10 @@
 <?php
+require_once(__DIR__.'/gateway/UserGateway.php');
+require_once(__DIR__.'/class/User.php');
 class UserModel
 {
     static function connection(string $pseudo, string $pass) : int {
-        global $dsn, $user, $password;
-
-        $userGate = new UserGateway(new Connection($dsn, $user, $password));
+        $userGate = new UserGateway();
 
         if ($userGate->findUser($pseudo, $pass) == 1) {
             $_SESSION['login'] = $pseudo;
@@ -20,8 +20,6 @@ class UserModel
         $_SESSION = array();
         session_start();
     }
-
-
     static function isUser() {
         if (isset($_SESSION['login']) && isset($_SESSION['role'])) {
             $login = $_SESSION['login'];
@@ -35,12 +33,7 @@ class UserModel
     }
 
     static function getUserNbAnimePage(string $pseudo) : int{
-        global $dsn, $user, $password;
-        $userGate = new UserGateway(new Connection($dsn, $user, $password));
-
+        $userGate = new UserGateway();
         return $userGate->getUserNbAnimePage($pseudo);
-
-
     }
-
 }

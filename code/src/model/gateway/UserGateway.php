@@ -7,9 +7,10 @@ class UserGateway {
      * UserGateway constructor.
      * @param $con
      */
-    public function __construct(Connection $con)
+    public function __construct()
     {
-        $this->con = $con;
+        global $connection;
+        $this->con = $connection;
     }
 
 
