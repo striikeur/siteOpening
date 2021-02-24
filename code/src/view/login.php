@@ -31,17 +31,10 @@
     <input name="pseudo" type="text" id="inputPseudo" class="form-control" placeholder="Pseudo" required autofocus>
     <label for="inputPassword" class="sr-only">Mot de passe</label>
     <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Mot de passe" required>
-
-    <!--			<div class="checkbox mb-3">-->
-    <!--				<label>-->
-    <!--					<input name="recall" type="checkbox" value="remember-me"> Se souvenir de moi-->
-    <!--				</label>-->
-    <!--			</div>-->
-
     <input type="hidden" name="action" value="connection">
 
     <button class="btn btn-lg btn-primary btn-block" type="submit">Se connecter</button>
-    <p class="mt-1 mb-3 text-muted">&copy; 2019-2020</p>
+    <p class="mt-1 mb-3 text-muted">&copy; 2020-2021</p>
 </form>
 
 <script src="view/bootstrap/js/jquery.js"></script>

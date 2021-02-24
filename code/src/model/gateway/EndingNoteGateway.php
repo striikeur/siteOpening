@@ -1,12 +1,13 @@
 <?php
 
-class NoteGateway
+
+class EndingNoteGateway
 {
     private $con;
     public function __construct()
     {
-        global $connection;
-        $this->con = $connection;
+        global $connectionEnding;
+        $this->con = $connectionEnding;
     }
 
     public function findAllNotes(): array {
@@ -15,7 +16,7 @@ class NoteGateway
                 return  null;
             }
         }
-        $query = "SELECT * FROM note";
+        $query = "SELECT * FROM noteending";
 
         $this->con->executeQuery($query, array());
         $listeNote = array();
@@ -37,12 +38,12 @@ class NoteGateway
         if(count($user) != 1 ){
             return -1;
         }
-        $query = "SELECT * FROM anime";
+        $query = "SELECT * FROM animeending";
         $this->con->executeQuery($query, array());
         $animes = $this->con->getResults();
 
         foreach ($animes as $anime) {
-            $query = "SELECT COUNT(*) FROM note where idAnime=:idAnime AND idUser=:idUser";
+            $query = "SELECT COUNT(*) FROM noteending where idAnime=:idAnime AND idUser=:idUser";
             $this->con->executeQuery($query, array(
                 ':idAnime' => array($anime['id'], PDO::PARAM_INT),
                 ':idUser' => array($user[0]['id'], PDO::PARAM_INT)
@@ -66,7 +67,7 @@ class NoteGateway
         if(count($user) != 1 ){
             return -1;
         }
-        $query = "SELECT * FROM note WHERE idUser=:idUser";
+        $query = "SELECT * FROM noteending WHERE idUser=:idUser";
 
         $this->con->executeQuery($query, array(
             ":idUser" => array($user[0]['id'], PDO::PARAM_INT)
@@ -92,7 +93,7 @@ class NoteGateway
         if(count($user) != 1 ){
             return -1;
         }
-        $query = "SELECT COUNT(*) FROM note WHERE idUser=:idUser";
+        $query = "SELECT COUNT(*) FROM noteending WHERE idUser=:idUser";
 
         $this->con->executeQuery($query, array(
             ":idUser" => array($user[0]['id'], PDO::PARAM_INT)
@@ -114,7 +115,7 @@ class NoteGateway
             return -1;
         }
 
-        $query = "SELECT * FROM note WHERE idUser=:idUser AND noteTotale = -1";
+        $query = "SELECT * FROM noteending WHERE idUser=:idUser AND noteTotale = -1";
 
         $this->con->executeQuery($query, array(
             ":idUser" => array($user[0]['id'], PDO::PARAM_INT)
@@ -130,38 +131,38 @@ class NoteGateway
 
     }
     public function findAllNotesByUserPaged(string $pseudo, int $limit, int $page) {
-    $query = "SELECT * FROM user WHERE pseudo=:pseudo";
-    $this->con->executeQuery($query, array(
-        ':pseudo' => array($pseudo, PDO::PARAM_STR)
-    ));
+        $query = "SELECT * FROM user WHERE pseudo=:pseudo";
+        $this->con->executeQuery($query, array(
+            ':pseudo' => array($pseudo, PDO::PARAM_STR)
+        ));
 
-    $user = $this->con->getResults();
-    if(count($user) != 1 ){
-        return -1;
+        $user = $this->con->getResults();
+        if(count($user) != 1 ){
+            return -1;
+        }
+
+
+        $beginning = ($page - 1) * $limit;
+        $query = "SELECT * FROM noteending WHERE idUser=:idUser LIMIT :limit OFFSET :beginning";
+
+        $this->con->executeQuery($query, array(
+            ':idUser' => array($user[0]['id'], PDO::PARAM_INT),
+            ':limit' => array($limit, PDO::PARAM_INT),
+            ':beginning' => array($beginning, PDO::PARAM_INT)
+        ));
+
+        $listeNote = array();
+        $results = $this->con->getResults();
+
+        foreach ($results as $note){
+            $listeNote[]=new Note($note['id'], $note['idAnime'], $note['idUser'], $note['noteVideo'], $note['noteMusique'], $note['noteTotale']);
+        }
+        return $listeNote;
+
     }
-
-
-    $beginning = ($page - 1) * $limit;
-    $query = "SELECT * FROM note WHERE idUser=:idUser LIMIT :limit OFFSET :beginning";
-
-    $this->con->executeQuery($query, array(
-        ':idUser' => array($user[0]['id'], PDO::PARAM_INT),
-        ':limit' => array($limit, PDO::PARAM_INT),
-        ':beginning' => array($beginning, PDO::PARAM_INT)
-    ));
-
-    $listeNote = array();
-    $results = $this->con->getResults();
-
-    foreach ($results as $note){
-        $listeNote[]=new Note($note['id'], $note['idAnime'], $note['idUser'], $note['noteVideo'], $note['noteMusique'], $note['noteTotale']);
-    }
-    return $listeNote;
-
-}
 
     public function findAllNotesByAnime(string $animeName) {
-        $query = "SELECT * FROM anime WHERE name=:name";
+        $query = "SELECT * FROM animeending WHERE name=:name";
         $this->con->executeQuery($query, array(
             ':name' => array($animeName, PDO::PARAM_STR)
         ));
@@ -169,7 +170,7 @@ class NoteGateway
         if(count($result) != 1 ){
             return -1;
         }
-        $query = "SELECT * FROM note WHERE idAnime=:idAnime";
+        $query = "SELECT * FROM noteending WHERE idAnime=:idAnime";
         $this->con->executeQuery($query, array(
             ":idAnime" => array($result['id'], PDO::PARAM_INT)
         ));
@@ -183,7 +184,7 @@ class NoteGateway
 
     public function findNoteByAnimePseudo(string $animeName, string $pseudo)
     {
-        $query = "SELECT * FROM anime WHERE name = :name";
+        $query = "SELECT * FROM animeending WHERE name = :name";
         $this->con->executeQuery($query, array(
             ':name' => array($animeName, PDO::PARAM_STR)
         ));
@@ -193,7 +194,7 @@ class NoteGateway
             ':pseudo' => array($pseudo, PDO::PARAM_STR)
         ));
         $user = $this->con->getResults();
-        $query = "SELECT * FROM note WHERE idAnime=:idAnime AND idUser=:idUser ";
+        $query = "SELECT * FROM noteending WHERE idAnime=:idAnime AND idUser=:idUser ";
         $this->con->executeQuery($query, array(
             ":idAnime" => array($anime[0]['id'], PDO::PARAM_INT),
             ":idUser" => array($user[0]['id'], PDO::PARAM_INT)
@@ -212,7 +213,7 @@ class NoteGateway
             ':pseudo' => array($pseudo, PDO::PARAM_STR)
         ));
         $user = $this->con->getResults();
-        $query = "SELECT * FROM note WHERE idAnime=:idAnime AND idUser=:idUser ";
+        $query = "SELECT * FROM noteending WHERE idAnime=:idAnime AND idUser=:idUser ";
         $this->con->executeQuery($query, array(
             ":idAnime" => array($animeId, PDO::PARAM_INT),
             ":idUser" => array($user[0]['id'], PDO::PARAM_INT)
@@ -226,7 +227,7 @@ class NoteGateway
             ':pseudo' => array($pseudo, PDO::PARAM_STR)
         ));
         $user = $this->con->getResults();
-        $query = "UPDATE note SET noteVideo=:noteVideo, noteMusique=:noteMusique, noteTotale=:noteTotale WHERE idUser=:idUser AND idAnime=:idAnime";
+        $query = "UPDATE noteending SET noteVideo=:noteVideo, noteMusique=:noteMusique, noteTotale=:noteTotale WHERE idUser=:idUser AND idAnime=:idAnime";
         $this->con->executeQuery($query, array(
             ':noteVideo' => array($noteVideo, PDO::PARAM_STR),
             ':noteMusique' => array($noteMusique, PDO::PARAM_STR),
@@ -239,7 +240,7 @@ class NoteGateway
 
     public function createNote(string $animeName, string $pseudo)
     {
-        $query = "SELECT * FROM anime WHERE name = :name";
+        $query = "SELECT * FROM animeending WHERE name = :name";
         $this->con->executeQuery($query, array(
             ':name' => array($animeName, PDO::PARAM_STR)
         ));
@@ -249,14 +250,11 @@ class NoteGateway
             ':pseudo' => array($pseudo, PDO::PARAM_STR)
         ));
         $user = $this->con->getResults();
-
-
-        $query = "INSERT INTO note (idUser, idAnime) VALUES (:idUser, :idAnime)";
+        $query = "INSERT INTO noteending (idUser, idAnime) VALUES (:idUser, :idAnime)";
         $this->con->executeQuery($query, array(
             ':idUser' => array($user[0]['id'], PDO::PARAM_INT),
             ':idAnime' => array($anime[0]['id'], PDO::PARAM_INT)
         ));
-        $this->con->getResults();
     }
 
 }

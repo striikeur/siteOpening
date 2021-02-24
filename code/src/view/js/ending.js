@@ -7,13 +7,13 @@ function noteMusiqueFunction(value, id) {
 
     if(parseFloat(musique.value) < 0){
         musique.value = 0;
-    }else if(parseFloat(musique.value) > 5){
-        musique.value= 5;
+    }else if(parseFloat(musique.value) > 7){
+        musique.value= 7;
     }
     if(parseFloat(video.value) < 0){
         video.value = 0;
-    }else if(parseFloat(video.value) > 5){
-        video.value= 5;
+    }else if(parseFloat(video.value) > 3){
+        video.value= 3;
     }
 
     noteTot = parseFloat(musique.value) + parseFloat(video.value);
@@ -30,13 +30,13 @@ function noteVideoFunction(value, id) {
 
     if(parseFloat(musique.value) < 0){
         musique.value = 0;
-    }else if(parseFloat(musique.value) > 5){
-        musique.value= 5;
+    }else if(parseFloat(musique.value) > 7){
+        musique.value= 7;
     }
     if(parseFloat(video.value) < 0){
         video.value = 0;
-    }else if(parseFloat(video.value) > 5){
-        video.value= 5;
+    }else if(parseFloat(video.value) > 3){
+        video.value= 3;
     }
 
     noteTot = parseFloat(musique.value) + parseFloat(video.value);
@@ -44,20 +44,21 @@ function noteVideoFunction(value, id) {
     updateDB(parseFloat(musique.value), parseFloat(video.value), noteTot, idAnime);
 }
 
+
+
 function updateDB(noteMus, noteVid, finale, id) {
     $.ajax({
-        url: '?action=updateNote',
+        url: '?action=updateNote&ending',
         type: 'POST',
         data: 'noteMusique=' + noteMus + '&noteVideo=' + noteVid + '&noteFinale=' + finale + '&idAnime=' + id,
         dataType: 'html',
         success: function () {
-            console.log('isWorking');
+            console.log('Succes updateNote');
         },
         error: function () {
-            console.log('is not working');
+            console.log('Not success update note');
         }
     });
-
 }
 
 

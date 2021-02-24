@@ -1,5 +1,7 @@
 <?php
-class Anime
+
+
+class Ending
 {
     private $id;
     private $name;
@@ -8,17 +10,22 @@ class Anime
     private $miniature;
     private $video;
     private $moyenne;
+    private $spoiler;
+    private $nsfw;
 
     /**
-     * Anime constructor.
+     * Ending constructor.
      * @param $id
      * @param $name
-     * @param $malLinkadd
+     * @param $malLink
      * @param $season
      * @param $miniature
      * @param $video
+     * @param $moyenne
+     * @param $spoiler
+     * @param $nsfw
      */
-    public function __construct($id, $name, $malLink, $season, $miniature, $video, $moyenne)
+    public function __construct($id, $name, $malLink, $season, $miniature, $video, $moyenne, $nsfw, $spoiler)
     {
         $this->id = $id;
         $this->name = $name;
@@ -27,7 +34,10 @@ class Anime
         $this->miniature = $miniature;
         $this->video = $video;
         $this->moyenne = $moyenne;
+        $this->spoiler = $spoiler;
+        $this->nsfw = $nsfw;
     }
+
 
     /**
      * @return mixed
@@ -141,8 +151,37 @@ class Anime
         $this->moyenne = $moyenne;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getSpoiler()
+    {
+        return $this->spoiler;
+    }
 
+    /**
+     * @param mixed $spoiler
+     */
+    public function setSpoiler($spoiler): void
+    {
+        $this->spoiler = $spoiler;
+    }
 
+    /**
+     * @return mixed
+     */
+    public function getNsfw()
+    {
+        return $this->nsfw;
+    }
+
+    /**
+     * @param mixed $nsfw
+     */
+    public function setNsfw($nsfw): void
+    {
+        $this->nsfw = $nsfw;
+    }
 
 
 

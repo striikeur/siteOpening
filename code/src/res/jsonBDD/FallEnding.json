@@ -1,0 +1,632 @@
+[
+    {
+        "name" : "Jujutsu Kaisen (TV)",
+        "malLink" : "https://myanimelist.net/anime/40748/Jujutsu_Kaisen_TV",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Jujutsu_Kaisen_TV.jpg",
+        "videoLink" : "../res/ending/Fall/Jujutsu_Kaisen_TV.mp4"
+    },
+    {
+        "name" : "Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III",
+        "malLink" : "https://myanimelist.net/anime/40454/Dungeon_ni_Deai_wo_Motomeru_no_wa_Machigatteiru_Darou_ka_III",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Dungeon_ni_Deai_wo_Motomeru_no_wa_Machigatteiru_Darou_ka_III.jpg",
+        "videoLink" : "../res/ending/Fall/Dungeon_ni_Deai_wo_Motomeru_no_wa_Machigatteiru_Darou_ka_III.mp4"
+    },
+    {
+        "name" : "Haikyuu!!: To the Top 2nd Season ED 1",
+        "malLink" : "https://myanimelist.net/anime/40776/Haikyuu__To_the_Top_2nd_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Haikyuu__To_the_Top_2nd_Season.jpg",
+        "videoLink" : "../res/ending/Fall/Haikyuu__To_the_Top_2nd_Season_ed_1.mp4"
+    },
+    {
+        "name" : "Haikyuu!!: To the Top 2nd Season ED 2 (spoiler)",
+        "malLink" : "https://myanimelist.net/anime/40776/Haikyuu__To_the_Top_2nd_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Haikyuu__To_the_Top_2nd_Season.jpg",
+        "videoLink" : "../res/ending/Fall/Haikyuu__To_the_Top_2nd_Season_ed_2.mp4"
+    },
+    {
+        "name" : "Mahouka Koukou no Rettousei: Raihousha-hen",
+        "malLink" : "https://myanimelist.net/anime/40497/Mahouka_Koukou_no_Rettousei__Raihousha-hen",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Mahouka_Koukou_no_Rettousei__Raihousha-hen.jpg",
+        "videoLink" : "../res/ending/Fall/Mahouka_Koukou_no_Rettousei__Raihousha-hen.mp4"
+    },
+    {
+        "name" : "Tonikaku Kawaii",
+        "malLink" : "https://myanimelist.net/anime/41389/Tonikaku_Kawaii",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tonikaku_Kawaii.jpg",
+        "videoLink" : "../res/ending/Fall/Tonikaku_Kawaii.mp4"
+    },
+    {
+        "name" : "Higurashi no Naku Koro ni Gou ED 1 Leger spoil episode 1 je suppose",
+        "malLink" : "https://myanimelist.net/anime/41006/Higurashi_no_Naku_Koro_ni_Gou",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Higurashi_no_Naku_Koro_ni_Gou.jpg",
+        "videoLink" : "../res/ending/Fall/Higurashi_no_Naku_Koro_ni_Gou_ed_1.mp4"
+    },
+    {
+        "name" : "Higurashi no Naku Koro ni Gou ED 2",
+        "malLink" : "https://myanimelist.net/anime/41006/Higurashi_no_Naku_Koro_ni_Gou",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Higurashi_no_Naku_Koro_ni_Gou.jpg",
+        "videoLink" : "../res/ending/Fall/Higurashi_no_Naku_Koro_ni_Gou_ed_2.mp4"
+    },
+    {
+        "name" : "Majo no Tabitabi",
+        "malLink" : "https://myanimelist.net/anime/40571/Majo_no_Tabitabi",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Majo_no_Tabitabi.jpg",
+        "videoLink" : "../res/ending/Fall/Majo_no_Tabitabi.mp4"
+    },
+    {
+        "name" : "Noblesse",
+        "malLink" : "https://myanimelist.net/anime/41345/Noblesse",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Noblesse.jpg",
+        "videoLink" : "../res/ending/Fall/Noblesse.mp4"
+    },
+    {
+        "name" : "Kamisama ni Natta Hi ED 1 ",
+        "malLink" : "https://myanimelist.net/anime/41930/Kamisama_ni_Natta_Hi",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Kamisama_ni_Natta_Hi.jpg",
+        "videoLink" : "../res/ending/Fall/Kamisama_ni_Natta_Hi_ed_1.mp4"
+    },
+    {
+        "name" : "Kamisama ni Natta Hi ED 2 (ptet spoil)",
+        "malLink" : "https://myanimelist.net/anime/41930/Kamisama_ni_Natta_Hi",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Kamisama_ni_Natta_Hi.jpg",
+        "videoLink" : "../res/ending/Fall/Kamisama_ni_Natta_Hi_ed_2.mp4"
+    },
+    {
+        "name" : "Kamisama ni Natta Hi ED 3 ",
+        "malLink" : "https://myanimelist.net/anime/41930/Kamisama_ni_Natta_Hi",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Kamisama_ni_Natta_Hi.jpg",
+        "videoLink" : "../res/ending/Fall/Kamisama_ni_Natta_Hi_ed_3.mp4"
+    },
+    {
+        "name" : "Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen",
+        "malLink" : "https://myanimelist.net/anime/40595/Kimi_to_Boku_no_Saigo_no_Senjou_Aruiwa_Sekai_ga_Hajimaru_Seisen",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Kimi_to_Boku_no_Saigo_no_Senjou_Aruiwa_Sekai_ga_Hajimaru_Seisen.jpg",
+        "videoLink" : "../res/ending/Fall/Kimi_to_Boku_no_Saigo_no_Senjou_Aruiwa_Sekai_ga_Hajimaru_Seisen.mp4"
+    },
+    {
+        "name" : "Akudama Drive",
+        "malLink" : "https://myanimelist.net/anime/41433/Akudama_Drive",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Akudama_Drive.jpg",
+        "videoLink" : "../res/ending/Fall/Akudama_Drive.mp4"
+    },
+    {
+        "name" : "100-man no Inochi no Ue ni Ore wa Tatteiru",
+        "malLink" : "https://myanimelist.net/anime/41380/100-man_no_Inochi_no_Ue_ni_Ore_wa_Tatteiru",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/100-man_no_Inochi_no_Ue_ni_Ore_wa_Tatteiru.jpg",
+        "videoLink" : "../res/ending/Fall/100-man_no_Inochi_no_Ue_ni_Ore_wa_Tatteiru.mp4"
+    },
+    {
+        "name" : "Munou na Nana",
+        "malLink" : "https://myanimelist.net/anime/41619/Munou_na_Nana",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Munou_na_Nana.jpg",
+        "videoLink" : "../res/ending/Fall/Munou_na_Nana.mp4"
+    },
+    {
+        "name" : "Yuukoku no Moriarty",
+        "malLink" : "https://myanimelist.net/anime/40911/Yuukoku_no_Moriarty",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Yuukoku_no_Moriarty.jpg",
+        "videoLink" : "../res/ending/Fall/Yuukoku_no_Moriarty.mp4"
+    },
+    {
+        "name" : "Adachi to Shimamura",
+        "malLink" : "https://myanimelist.net/anime/39790/Adachi_to_Shimamura",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Adachi_to_Shimamura.jpg",
+        "videoLink" : "../res/ending/Fall/Adachi_to_Shimamura.mp4"
+    },
+    {
+        "name" : "Ikebukuro West Gate Park ED 1",
+        "malLink" : "https://myanimelist.net/anime/40359/Ikebukuro_West_Gate_Park",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Ikebukuro_West_Gate_Park.jpg",
+        "videoLink" : "../res/ending/Fall/Ikebukuro_West_Gate_Park_ed_1.mp4"
+    },
+    {
+        "name" : "Ikebukuro West Gate Park ED 2",
+        "malLink" : "https://myanimelist.net/anime/40359/Ikebukuro_West_Gate_Park",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Ikebukuro_West_Gate_Park.jpg",
+        "videoLink" : "../res/ending/Fall/Ikebukuro_West_Gate_Park_ed_2.mp4"
+    },
+    {
+        "name" : "Ikebukuro West Gate Park ED 3",
+        "malLink" : "https://myanimelist.net/anime/40359/Ikebukuro_West_Gate_Park",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Ikebukuro_West_Gate_Park.jpg",
+        "videoLink" : "../res/ending/Fall/Ikebukuro_West_Gate_Park_ed_3.mp4"
+    },
+    {
+        "name" : "Kami-tachi ni Hirowareta Otoko",
+        "malLink" : "https://myanimelist.net/anime/41312/Kami-tachi_ni_Hirowareta_Otoko",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Kami-tachi_ni_Hirowareta_Otoko.jpg",
+        "videoLink" : "../res/ending/Fall/Kami-tachi_ni_Hirowareta_Otoko.mp4"
+    },
+    {
+        "name" : "Golden Kamuy 3rd Season ED 1",
+        "malLink" : "https://myanimelist.net/anime/40059/Golden_Kamuy_3rd_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Golden_Kamuy_3rd_Season.jpg",
+        "videoLink" : "../res/ending/Fall/Golden_Kamuy_3rd_Season_ed_1.mp4"
+    },
+    {
+        "name" : "Golden Kamuy 3rd Season ED 2",
+        "malLink" : "https://myanimelist.net/anime/40059/Golden_Kamuy_3rd_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Golden_Kamuy_3rd_Season.jpg",
+        "videoLink" : "../res/ending/Fall/Golden_Kamuy_3rd_Season_ed_2.mp4"
+    },
+    {
+        "name" : "Maoujou de Oyasumi",
+        "malLink" : "https://myanimelist.net/anime/40397/Maoujou_de_Oyasumi",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Maoujou_de_Oyasumi.jpg",
+        "videoLink" : "../res/ending/Fall/Maoujou_de_Oyasumi.mp4"
+    },
+    {
+        "name" : "Iwa Kakeru!: Sport Climbing Girls",
+        "malLink" : "https://myanimelist.net/anime/41783/Iwa_Kakeru__Sport_Climbing_Girls",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Iwa_Kakeru__Sport_Climbing_Girls.jpg",
+        "videoLink" : "../res/ending/Fall/Iwa_Kakeru__Sport_Climbing_Girls.mp4"
+    },
+    {
+        "name" : "Assault Lily: Bouquet ED 1 (très très léger spoil au début genre les 5 premieres secondes)",
+        "malLink" : "https://myanimelist.net/anime/40550/Assault_Lily__Bouquet",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Assault_Lily__Bouquet.jpg",
+        "videoLink" : "../res/ending/Fall/Assault_Lily__Bouquet_ed_1.mp4"
+    },
+    {
+        "name" : "Assault Lily: Bouquet ED 2",
+        "malLink" : "https://myanimelist.net/anime/40550/Assault_Lily__Bouquet",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Assault_Lily__Bouquet.jpg",
+        "videoLink" : "../res/ending/Fall/Assault_Lily__Bouquet_ed_2.mp4"
+    },
+    {
+        "name" : "Assault Lily: Bouquet ED 3",
+        "malLink" : "https://myanimelist.net/anime/40550/Assault_Lily__Bouquet",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Assault_Lily__Bouquet.jpg",
+        "videoLink" : "../res/ending/Fall/Assault_Lily__Bouquet_ed_3.mp4"
+    },
+    {
+        "name" : "Assault Lily: Bouquet ED 4 (out of context spoil)",
+        "malLink" : "https://myanimelist.net/anime/40550/Assault_Lily__Bouquet",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Assault_Lily__Bouquet.jpg",
+        "videoLink" : "../res/ending/Fall/Assault_Lily__Bouquet_ed_4.mp4"
+    },
+    {
+        "name" : "Kuma Kuma Kuma Bear ED 1",
+        "malLink" : "https://myanimelist.net/anime/40974/Kuma_Kuma_Kuma_Bear",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Kuma_Kuma_Kuma_Bear.jpg",
+        "videoLink" : "../res/ending/Fall/Kuma_Kuma_Kuma_Bear_ed_1.mp4"
+    },
+    {
+        "name" : "Kuma Kuma Kuma Bear ED 2 (meme chanson que le 1 mais d'autres seiyuu + video qui spoil)",
+        "malLink" : "https://myanimelist.net/anime/40974/Kuma_Kuma_Kuma_Bear",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Kuma_Kuma_Kuma_Bear.jpg",
+        "videoLink" : "../res/ending/Fall/Kuma_Kuma_Kuma_Bear_ed_2.mp4"
+    },
+    {
+        "name" : "King's Raid: Ishi wo Tsugumono-tachi",
+        "malLink" : "https://myanimelist.net/anime/41834/Kings_Raid__Ishi_wo_Tsugumono-tachi",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Kings_Raid__Ishi_wo_Tsugumono-tachi.jpg",
+        "videoLink" : "../res/ending/Fall/Kings_Raid__Ishi_wo_Tsugumono-tachi.mp4"
+    },
+    {
+        "name" : "Love Live! Nijigasaki Gakuen School Idol Doukoukai",
+        "malLink" : "https://myanimelist.net/anime/40879/Love_Live_Nijigasaki_Gakuen_School_Idol_Doukoukai",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Love_Live_Nijigasaki_Gakuen_School_Idol_Doukoukai.jpg",
+        "videoLink" : "../res/ending/Fall/Love_Live_Nijigasaki_Gakuen_School_Idol_Doukoukai.mp4"
+    },
+    {
+        "name" : "Dragon Quest: Dai no Daibouken (2020)",
+        "malLink" : "https://myanimelist.net/anime/40906/Dragon_Quest__Dai_no_Daibouken_2020",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Dragon_Quest__Dai_no_Daibouken_2020.jpg",
+        "videoLink" : "../res/ending/Fall/Dragon_Quest__Dai_no_Daibouken_2020.mp4"
+    },
+    {
+        "name" : "Gochuumon wa Usagi Desu ka??? Bloom ED 1",
+        "malLink" : "https://myanimelist.net/anime/38337/Gochuumon_wa_Usagi_Desu_ka_Bloom",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Gochuumon_wa_Usagi_Desu_ka_Bloom.jpg",
+        "videoLink" : "../res/ending/Fall/Gochuumon_wa_Usagi_Desu_ka_Bloom_ed_1.mp4"
+    },
+    {
+        "name" : "Gochuumon wa Usagi Desu ka??? Bloom ED 2",
+        "malLink" : "https://myanimelist.net/anime/38337/Gochuumon_wa_Usagi_Desu_ka_Bloom",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Gochuumon_wa_Usagi_Desu_ka_Bloom.jpg",
+        "videoLink" : "../res/ending/Fall/Gochuumon_wa_Usagi_Desu_ka_Bloom_ed_2.mp4"
+    },
+    {
+        "name" : "Senyoku no Sigrdrifa ED 1",
+        "malLink" : "https://myanimelist.net/anime/41372/Senyoku_no_Sigrdrifa",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Senyoku_no_Sigrdrifa.jpg",
+        "videoLink" : "../res/ending/Fall/Senyoku_no_Sigrdrifa_ed_1.mp4"
+    },
+    {
+        "name" : "Senyoku no Sigrdrifa ED 2",
+        "malLink" : "https://myanimelist.net/anime/41372/Senyoku_no_Sigrdrifa",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Senyoku_no_Sigrdrifa.jpg",
+        "videoLink" : "../res/ending/Fall/Senyoku_no_Sigrdrifa_ed_2.mp4"
+    },
+    {
+        "name" : "Hypnosis Mic: Division Rap Battle - Rhyme Anima ED 1",
+        "malLink" : "https://myanimelist.net/anime/40803/Hypnosis_Mic__Division_Rap_Battle_-_Rhyme_Anima",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Hypnosis_Mic__Division_Rap_Battle_-_Rhyme_Anima.jpg",
+        "videoLink" : "../res/ending/Fall/Hypnosis_Mic__Division_Rap_Battle_-_Rhyme_Anima_ed_1.mp4"
+    },
+    {
+        "name" : "Hypnosis Mic: Division Rap Battle - Rhyme Anima ED 2",
+        "malLink" : "https://myanimelist.net/anime/40803/Hypnosis_Mic__Division_Rap_Battle_-_Rhyme_Anima",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Hypnosis_Mic__Division_Rap_Battle_-_Rhyme_Anima.jpg",
+        "videoLink" : "../res/ending/Fall/Hypnosis_Mic__Division_Rap_Battle_-_Rhyme_Anima_ed_2.mp4"
+    },
+    {
+        "name" : "Hypnosis Mic: Division Rap Battle - Rhyme Anima ED 3",
+        "malLink" : "https://myanimelist.net/anime/40803/Hypnosis_Mic__Division_Rap_Battle_-_Rhyme_Anima",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Hypnosis_Mic__Division_Rap_Battle_-_Rhyme_Anima.jpg",
+        "videoLink" : "../res/ending/Fall/Hypnosis_Mic__Division_Rap_Battle_-_Rhyme_Anima_ed_3.mp4"
+    },
+    {
+        "name" : "Hypnosis Mic: Division Rap Battle - Rhyme Anima ED 4",
+        "malLink" : "https://myanimelist.net/anime/40803/Hypnosis_Mic__Division_Rap_Battle_-_Rhyme_Anima",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Hypnosis_Mic__Division_Rap_Battle_-_Rhyme_Anima.jpg",
+        "videoLink" : "../res/ending/Fall/Hypnosis_Mic__Division_Rap_Battle_-_Rhyme_Anima_ed_4.mp4"
+    },
+    {
+        "name" : "Hypnosis Mic: Division Rap Battle - Rhyme Anima ED 5",
+        "malLink" : "https://myanimelist.net/anime/40803/Hypnosis_Mic__Division_Rap_Battle_-_Rhyme_Anima",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Hypnosis_Mic__Division_Rap_Battle_-_Rhyme_Anima.jpg",
+        "videoLink" : "../res/ending/Fall/Hypnosis_Mic__Division_Rap_Battle_-_Rhyme_Anima_ed_5.mp4"
+    },
+    {
+        "name" : "Taisou Zamurai ED 1",
+        "malLink" : "https://myanimelist.net/anime/42668/Taisou_Zamurai",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Taisou_Zamurai.jpg",
+        "videoLink" : "../res/ending/Fall/Taisou_Zamurai_ed_1.mp4"
+    },
+    {
+        "name" : "Taisou Zamurai ED 2",
+        "malLink" : "https://myanimelist.net/anime/42668/Taisou_Zamurai",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Taisou_Zamurai.jpg",
+        "videoLink" : "../res/ending/Fall/Taisou_Zamurai_ed_2.mp4"
+    },
+    {
+        "name" : "Magatsu Wahrheit: Zuerst",
+        "malLink" : "https://myanimelist.net/anime/37599/Magatsu_Wahrheit__Zuerst",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Magatsu_Wahrheit__Zuerst.jpg",
+        "videoLink" : "../res/ending/Fall/Magatsu_Wahrheit__Zuerst.mp4"
+    },
+    {
+        "name" : "Rail Romanesque ED 1",
+        "malLink" : "https://myanimelist.net/anime/40958/Rail_Romanesque",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Rail_Romanesque.jpg",
+        "videoLink" : "../res/ending/Fall/Rail_Romanesque_ed_1.mp4"
+    },
+    {
+        "name" : "Rail Romanesque ED 2",
+        "malLink" : "https://myanimelist.net/anime/40958/Rail_Romanesque",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Rail_Romanesque.jpg",
+        "videoLink" : "../res/ending/Fall/Rail_Romanesque_ed_2.mp4"
+    },
+    {
+        "name" : "Rail Romanesque ED 3",
+        "malLink" : "https://myanimelist.net/anime/40958/Rail_Romanesque",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Rail_Romanesque.jpg",
+        "videoLink" : "../res/ending/Fall/Rail_Romanesque_ed_3.mp4"
+    },
+    {
+        "name" : "Ochikobore Fruit Tart (un poil nsfw)",
+        "malLink" : "https://myanimelist.net/anime/39609/Ochikobore_Fruit_Tart",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Ochikobore_Fruit_Tart.jpg",
+        "videoLink" : "../res/ending/Fall/Ochikobore_Fruit_Tart.mp4"
+    },
+    {
+        "name" : "One Room Third Season ED 1",
+        "malLink" : "https://myanimelist.net/anime/41364/One_Room_Third_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/One_Room_Third_Season.jpg",
+        "videoLink" : "../res/ending/Fall/One_Room_Third_Season_ed_1.mp4"
+    },
+    {
+        "name" : "One Room Third Season ED 2",
+        "malLink" : "https://myanimelist.net/anime/41364/One_Room_Third_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/One_Room_Third_Season.jpg",
+        "videoLink" : "../res/ending/Fall/One_Room_Third_Season_ed_2.mp4"
+    },
+    {
+        "name" : "One Room Third Season ED 3",
+        "malLink" : "https://myanimelist.net/anime/41364/One_Room_Third_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/One_Room_Third_Season.jpg",
+        "videoLink" : "../res/ending/Fall/One_Room_Third_Season_ed_3.mp4"
+    },
+    {
+        "name" : "One Room Third Season ED 4",
+        "malLink" : "https://myanimelist.net/anime/41364/One_Room_Third_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/One_Room_Third_Season.jpg",
+        "videoLink" : "../res/ending/Fall/One_Room_Third_Season_ed_4.mp4"
+    },
+    {
+        "name" : "One Room Third Season ED 5",
+        "malLink" : "https://myanimelist.net/anime/41364/One_Room_Third_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/One_Room_Third_Season.jpg",
+        "videoLink" : "../res/ending/Fall/One_Room_Third_Season_ed_5.mp4"
+    },
+    {
+        "name" : "One Room Third Season ED 6 (un poil ecchi)",
+        "malLink" : "https://myanimelist.net/anime/41364/One_Room_Third_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/One_Room_Third_Season.jpg",
+        "videoLink" : "../res/ending/Fall/One_Room_Third_Season_ed_6.mp4"
+    },
+    {
+        "name" : "One Room Third Season ED 7 (un poil ecchi)",
+        "malLink" : "https://myanimelist.net/anime/41364/One_Room_Third_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/One_Room_Third_Season.jpg",
+        "videoLink" : "../res/ending/Fall/One_Room_Third_Season_ed_7.mp4"
+    },
+    {
+        "name" : "One Room Third Season ED 8",
+        "malLink" : "https://myanimelist.net/anime/41364/One_Room_Third_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/One_Room_Third_Season.jpg",
+        "videoLink" : "../res/ending/Fall/One_Room_Third_Season_ed_8.mp4"
+    },
+    {
+        "name" : "One Room Third Season ED 9",
+        "malLink" : "https://myanimelist.net/anime/41364/One_Room_Third_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/One_Room_Third_Season.jpg",
+        "videoLink" : "../res/ending/Fall/One_Room_Third_Season_ed_9.mp4"
+    },
+    {
+        "name" : "One Room Third Season ED 10 (un poil ecchi)",
+        "malLink" : "https://myanimelist.net/anime/41364/One_Room_Third_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/One_Room_Third_Season.jpg",
+        "videoLink" : "../res/ending/Fall/One_Room_Third_Season_ed_10.mp4"
+    },
+    {
+        "name" : "One Room Third Season ED 11",
+        "malLink" : "https://myanimelist.net/anime/41364/One_Room_Third_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/One_Room_Third_Season.jpg",
+        "videoLink" : "../res/ending/Fall/One_Room_Third_Season_ed_11.mp4"
+    },
+    {
+        "name" : "One Room Third Season ED 12",
+        "malLink" : "https://myanimelist.net/anime/41364/One_Room_Third_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/One_Room_Third_Season.jpg",
+        "videoLink" : "../res/ending/Fall/One_Room_Third_Season_ed_12.mp4"
+    },
+    {
+        "name" : "Strike Witches: Road to Berlin",
+        "malLink" : "https://myanimelist.net/anime/38005/Strike_Witches__Road_to_Berlin",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Strike_Witches__Road_to_Berlin.jpg",
+        "videoLink" : "../res/ending/Fall/Strike_Witches__Road_to_Berlin.mp4"
+    },
+    {
+        "name" : "Osomatsu-san 3rd Season",
+        "malLink" : "https://myanimelist.net/anime/42391/Osomatsu-san_3rd_Season",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Osomatsu-san_3rd_Season.jpg",
+        "videoLink" : "../res/ending/Fall/Osomatsu-san_3rd_Season.mp4"
+    },
+    {
+        "name" : "A3! Season Autumn & Winter ED 1",
+        "malLink" : "https://myanimelist.net/anime/40272/A3_Season_Autumn___Winter",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/A3_Season_Autumn___Winter.jpg",
+        "videoLink" : "../res/ending/Fall/A3_Season_Autumn___Winter_ed_1.mp4"
+    },
+    {
+        "name" : "A3! Season Autumn & Winter ED 2",
+        "malLink" : "https://myanimelist.net/anime/40272/A3_Season_Autumn___Winter",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/A3_Season_Autumn___Winter.jpg",
+        "videoLink" : "../res/ending/Fall/A3_Season_Autumn___Winter_ed_2.mp4"
+    },
+    {
+        "name" : "Maesetsu! ED 1",
+        "malLink" : "https://myanimelist.net/anime/40085/Maesetsu",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Maesetsu.jpg",
+        "videoLink" : "../res/ending/Fall/Maesetsu_ed_1.mp4"
+    },
+    {
+        "name" : "Maesetsu! ED 2",
+        "malLink" : "https://myanimelist.net/anime/40085/Maesetsu",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Maesetsu.jpg",
+        "videoLink" : "../res/ending/Fall/Maesetsu_ed_2mp4"
+    },
+    {
+        "name" : "Maesetsu! ED 3",
+        "malLink" : "https://myanimelist.net/anime/40085/Maesetsu",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Maesetsu.jpg",
+        "videoLink" : "../res/ending/Fall/Maesetsu_ed_3.mp4"
+    },
+    {
+        "name" : "Maesetsu! ED 4",
+        "malLink" : "https://myanimelist.net/anime/40085/Maesetsu",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Maesetsu.jpg",
+        "videoLink" : "../res/ending/Fall/Maesetsu_ed_4.mp4"
+    },
+    {
+        "name" : "Tian Guan Ci Fu ED 1 (j'arrive pas à cerner quelle partie est l'ending et quelle partie ne l'est pas)",
+        "malLink" : "https://myanimelist.net/anime/40730/Tian_Guan_Ci_Fu",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tian_Guan_Ci_Fu.jpg",
+        "videoLink" : "../res/ending/Fall/Tian_Guan_Ci_Fu_ed_1.mp4"
+    },
+    {
+        "name" : "Tian Guan Ci Fu ED 2 ",
+        "malLink" : "https://myanimelist.net/anime/40730/Tian_Guan_Ci_Fu",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tian_Guan_Ci_Fu.jpg",
+        "videoLink" : "../res/ending/Fall/Tian_Guan_Ci_Fu_ed_2.mp4"
+    },
+    {
+        "name" : "Tian Guan Ci Fu ED 3 ",
+        "malLink" : "https://myanimelist.net/anime/40730/Tian_Guan_Ci_Fu",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tian_Guan_Ci_Fu.jpg",
+        "videoLink" : "../res/ending/Fall/Tian_Guan_Ci_Fu_ed_3.mp4"
+    },
+    {
+        "name" : "Burn the Witch",
+        "malLink" : "https://myanimelist.net/anime/41468/Burn_the_Witch",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Burn_the_Witch.jpg",
+        "videoLink" : "../res/ending/Fall/Burn_the_Witch.mp4"
+    },
+    {
+        "name" : "Tsukiuta. The Animation Second Season, Tsukiani. 2 ED 1 ",
+        "malLink" : "https://myanimelist.net/anime/38669/Tsukiuta_The_Animation_2",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tsukiuta_The_Animation_2.jpg",
+        "videoLink" : "../res/ending/Fall/Tsukiuta_The_Animation_2_ed_1.webm"
+    },
+    {
+        "name" : "Tsukiuta. The Animation Second Season, Tsukiani. 2 ED 2 ",
+        "malLink" : "https://myanimelist.net/anime/38669/Tsukiuta_The_Animation_2",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tsukiuta_The_Animation_2.jpg",
+        "videoLink" : "../res/ending/Fall/Tsukiuta_The_Animation_2_ed_2.webm"
+    },
+    {
+        "name" : "Tsukiuta. The Animation Second Season, Tsukiani. 2 ED 3 ",
+        "malLink" : "https://myanimelist.net/anime/38669/Tsukiuta_The_Animation_2",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tsukiuta_The_Animation_2.jpg",
+        "videoLink" : "../res/ending/Fall/Tsukiuta_The_Animation_2_ed_3.webm"
+    },
+    {
+        "name" : "Tsukiuta. The Animation Second Season, Tsukiani. 2 ED 4 ",
+        "malLink" : "https://myanimelist.net/anime/38669/Tsukiuta_The_Animation_2",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tsukiuta_The_Animation_2.jpg",
+        "videoLink" : "../res/ending/Fall/Tsukiuta_The_Animation_2_ed_4.webm"
+    },
+    {
+        "name" : "Tsukiuta. The Animation Second Season, Tsukiani. 2 ED 5 ",
+        "malLink" : "https://myanimelist.net/anime/38669/Tsukiuta_The_Animation_2",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tsukiuta_The_Animation_2.jpg",
+        "videoLink" : "../res/ending/Fall/Tsukiuta_The_Animation_2_ed_5.webm"
+    },
+    {
+        "name" : "Tsukiuta. The Animation Second Season, Tsukiani. 2 ED 6 ",
+        "malLink" : "https://myanimelist.net/anime/38669/Tsukiuta_The_Animation_2",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tsukiuta_The_Animation_2.jpg",
+        "videoLink" : "../res/ending/Fall/Tsukiuta_The_Animation_2_ed_6.webm"
+    },
+    {
+        "name" : "Tsukiuta. The Animation Second Season, Tsukiani. 2 ED 7 ",
+        "malLink" : "https://myanimelist.net/anime/38669/Tsukiuta_The_Animation_2",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tsukiuta_The_Animation_2.jpg",
+        "videoLink" : "../res/ending/Fall/Tsukiuta_The_Animation_2_ed_7.webm"
+    },
+    {
+        "name" : "Tsukiuta. The Animation Second Season, Tsukiani. 2 ED 8 ",
+        "malLink" : "https://myanimelist.net/anime/38669/Tsukiuta_The_Animation_2",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tsukiuta_The_Animation_2.jpg",
+        "videoLink" : "../res/ending/Fall/Tsukiuta_The_Animation_2_ed_8.webm"
+    },
+    {
+        "name" : "Tsukiuta. The Animation Second Season, Tsukiani. 2 ED 9 ",
+        "malLink" : "https://myanimelist.net/anime/38669/Tsukiuta_The_Animation_2",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tsukiuta_The_Animation_2.jpg",
+        "videoLink" : "../res/ending/Fall/Tsukiuta_The_Animation_2_ed_9.webm"
+    },
+    {
+        "name" : "Tsukiuta. The Animation Second Season, Tsukiani. 2 ED 10 ",
+        "malLink" : "https://myanimelist.net/anime/38669/Tsukiuta_The_Animation_2",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tsukiuta_The_Animation_2.jpg",
+        "videoLink" : "../res/ending/Fall/Tsukiuta_The_Animation_2_ed_10.webm"
+    },
+    {
+        "name" : "Tsukiuta. The Animation Second Season, Tsukiani. 2 ED 11 ",
+        "malLink" : "https://myanimelist.net/anime/38669/Tsukiuta_The_Animation_2",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tsukiuta_The_Animation_2.jpg",
+        "videoLink" : "../res/ending/Fall/Tsukiuta_The_Animation_2_ed_11.webm"
+    },
+    {
+        "name" : "Tsukiuta. The Animation Second Season, Tsukiani. 2 ED 12 ",
+        "malLink" : "https://myanimelist.net/anime/38669/Tsukiuta_The_Animation_2",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tsukiuta_The_Animation_2.jpg",
+        "videoLink" : "../res/ending/Fall/Tsukiuta_The_Animation_2_ed_12.webm"
+    },
+    {
+        "name" : "Tsukiuta. The Animation Second Season, Tsukiani. 2 ED 13 ",
+        "malLink" : "https://myanimelist.net/anime/38669/Tsukiuta_The_Animation_2",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/Tsukiuta_The_Animation_2.jpg",
+        "videoLink" : "../res/ending/Fall/Tsukiuta_The_Animation_2_ed_13.webm"
+    },
+    {
+        "name" : "D4DJ: First Mix",
+        "malLink" : "https://myanimelist.net/anime/39681/D4DJ__First_Mix",
+        "season" : "Fall",
+        "miniature" : "../res/miniature/Fall/D4DJ__First_Mix.jpg",
+        "videoLink" : "../res/ending/Fall/D4DJ__First_Mix.mp4"
+    }
+]

@@ -20,7 +20,7 @@
 						<div class="d-flex justify-content-center">
 							<div>
 								<p class="lead mt-3 mb-4"><img src="view/style/icons/x-circle-fill.svg" alt="" width="24" height="24"> I’m a teapot. I don't make coffee. <img src="view/style/icons/x-circle-fill.svg" alt="" width="24" height="24"></p>
-								<a href="?action="><button type="button" class="btn btn-info"><img src="view/style/icons/arrow-bar-left.svg" alt="" width="24" height="24"> Retourner à l'accueil</button></a>
+								<a href="?action=&opening"><button type="button" class="btn btn-info"><img src="view/style/icons/arrow-bar-left.svg" alt="" width="24" height="24"> Retourner à l'accueil</button></a>
 							</div>
 							<div>
 								<img src="view/style/image/teapot.svg" alt="" width="240" height="140">

@@ -27,6 +27,12 @@ class ListNote {
         return $note;
 
     }
+    public function getNoteByAnimePseudoEnding(string $animeName, string $pseudo): Note
+    {
+        $note = EndingNoteModel::findNoteByAnimePseudo($animeName, $pseudo);
 
+        return $note;
+
+    }
 
 }

@@ -8,7 +8,7 @@
     <link href="view/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="view/style/error.css" type="text/css" />
 
-    <title>Erreur | ProgWeb</title>
+    <title>Erreur</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
                     }
                     ?>
                 </p>
-                <a href="?action="><button type="button" class="btn btn-info"><img src="view/style/icons/arrow-bar-left.svg" alt="" width="24" height="24"> Retourner à l'accueil</button></a>
+                <a href="?action=&opening"><button type="button" class="btn btn-info"><img src="view/style/icons/arrow-bar-left.svg" alt="" width="24" height="24"> Retourner à l'accueil</button></a>
             </div>
         </div>
     </div>

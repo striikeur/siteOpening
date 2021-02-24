@@ -9,14 +9,13 @@
 
 <body>
 <?php
-// Vérification des données provenant du modèle
 if (isset($listAnime))
 {
     ?>
     <div id="particles-js"></div>
 
     <header>
-        <?php include 'includes/header.php'; ?>
+        <?php include 'includes/headerOpening.php'; ?>
     </header>
 
     <main>
@@ -64,7 +63,7 @@ if (isset($listAnime))
             <nav>
                 <ul class="pagination justify-content-center">
                     <li class="page-item <?php if ($page == 1) echo "disabled"?>">
-                        <a class="page-link" href="?page=<?= $page - 1; ?>" aria-label="Previous">
+                        <a class="page-link" href="?page=<?= $page - 1; ?>&opening" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                         </a>
                     </li>
@@ -78,7 +77,7 @@ if (isset($listAnime))
                             ?>
 
                             <li class="page-item <?php if ($page == $i) echo "active"; ?>">
-                                <a class="page-link" href="?page=<?= $i; ?>">
+                                <a class="page-link" href="?page=<?= $i; ?>&opening">
                                     <?= $i; ?>
                                 </a>
                             </li>
@@ -105,7 +104,7 @@ if (isset($listAnime))
                         if($i > $nbPages){ continue;}
                         ?>
 
-                        <li class="page-item <?php if ($page == $i) echo "active";?>"><a class="page-link" href="?page=<?= $i; ?>"><?= $i; ?></a></li>
+                        <li class="page-item <?php if ($page == $i) echo "active";?>"><a class="page-link" href="?page=<?= $i; ?>&opening"><?= $i; ?></a></li>
 
                         <?php
                     }
@@ -126,7 +125,7 @@ if (isset($listAnime))
                         {
                             ?>
 
-                            <li class="page-item <?php if ($page == $i) echo "active";?>"><a class="page-link" href="?page=<?= $i; ?>"><?= $i; ?></a></li>
+                            <li class="page-item <?php if ($page == $i) echo "active";?>"><a class="page-link" href="?page=<?= $i; ?>&opening"><?= $i; ?></a></li>
 
                             <?php
                         }
@@ -136,7 +135,7 @@ if (isset($listAnime))
 
 
                     <li class="page-item <?php if ($page == $nbPages) echo "disabled"?>">
-                        <a class="page-link" href="?page=<?= $page + 1; ?>" aria-label="Next">
+                        <a class="page-link" href="?page=<?= $page + 1; ?>&opening" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
                         </a>
                     </li>
@@ -164,7 +163,7 @@ else {
 <script src="view/bootstrap/js/bootstrap.js"></script>
 <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src="view/js/main.js"></script>
+<script src="view/js/opening.js"></script>
 <script>
     function playOpening(id){
         let btn = document.getElementById(id);
