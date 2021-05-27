@@ -191,8 +191,8 @@ class AnimeGateway {
         }
     }
     public function updateAnimeMoyenne(int $idAnime){
-        echo("updating anime note <br/>");
-        $query = "SELECT * FROM note WHERE idAnime=:idAnime AND noteTotale > 0";
+        //echo("updating anime note <br/>");
+        $query = "SELECT * FROM note WHERE idAnime=:idAnime AND noteTotale >= 0";
         $this->con->executeQuery($query, array(
             ':idAnime' => array($idAnime, PDO::PARAM_INT)
         ));

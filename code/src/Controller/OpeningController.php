@@ -25,7 +25,7 @@ class OpeningController
                     $this->Search($dViewError);
                     break;
                 case "admin": //
-                    $this->LoginAdmin();
+                    $this->admin();
                     break;
                 case "connection": //
                     $this->Connection($dViewError);
@@ -53,6 +53,12 @@ class OpeningController
                     break;
                 case "notNoted":
                     $this->notNoted();
+                    break;
+                case "video":
+                    $this->videoTop();
+                    break;
+                case "video720":
+                    $this->videoTop720();
                     break;
                 default: //mauvaise action
                     $dViewError[] =	"Erreur d'appel php.";
@@ -155,17 +161,7 @@ class OpeningController
             }
         }
     }
-    function LoginAdmin() {
-        global $rep,$vues;
-        $user = UserModel::isUser();
-        if ($user == NULL) {
-            require ($rep.$vues['login']);
-        }
-        else {
-            $listNews = AnimeModel::getAllAnime();
-            require ($rep.$vues['admin']);
-        }
-    }
+
     function Connection($dViewError) {
         global $rep,$vues;
         if (isset($_POST['pseudo'])) {
@@ -221,15 +217,16 @@ class OpeningController
      */
     public function setView(User $user, $rep, $vues, $page)
     {
-        if(NoteModel::countNotesByUser($_SESSION['login']) != AnimeModel::countAnime()){
-            NoteModel::createNotes($_SESSION['login']);
-        }
         $user->setNote(new ListNote(NoteModel::findAllNotesByUser($_SESSION['login'])));
 
         $user->setNbAnimePage(UserModel::getUserNbAnimePage($_SESSION['login']));
+        $listeNote = NoteModel::findAllNotesByUserPaged($_SESSION['login'], $user->getNbAnimePage(), $page);
         $nbAnime = AnimeModel::countAnime();
         $nbPages = ceil($nbAnime / $user->getNbAnimePage());
-        $listAnime = AnimeModel::getAllAnimeByPage($user->getNbAnimePage(), $page);
+        $listAnime = [];
+        foreach ($listeNote as $note){
+            $listAnime[] = AnimeModel::getAnimeById($note->getAnimeId());
+        }
         require ($rep.$vues['top']);
     }
 
@@ -280,6 +277,23 @@ class OpeningController
             }
             require($rep . $vues['top']);
         }
+    }
+
+    private function admin()
+    {
+        new AdminController();
+    }
+
+    private function videoTop()
+    {
+        global $rep,$vues;
+        require ($rep.$vues['video']);
+    }
+
+    private function videoTop720()
+    {
+        global $rep,$vues;
+        require ($rep.$vues['video720']);
     }
 
 }

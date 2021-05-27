@@ -16,9 +16,11 @@ $passwordEnding= '';
 $connectionEnding = new Connection($dsnEnding, $userEnding, $passwordEnding);
 
 $vues['video']='view/video.php';
+$vues['video720']='view/video720.php';
 $vues['top']='view/top.php';
 $vues['topEnding']='view/topEnding.php';
 $vues['login']='view/login.php';
+$vues['admin']='view/admin.php';
 
 
 

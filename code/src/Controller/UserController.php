@@ -3,6 +3,7 @@ require_once(__DIR__.'/../model/class/ListNote.php');
 require_once (__DIR__.'/OpeningController.php');
 require_once (__DIR__.'/EndingController.php');
 require_once(__DIR__.'/../model/EndingModel.php');
+require_once(__DIR__.'/AdminController.php');
 
 class UserController
 {

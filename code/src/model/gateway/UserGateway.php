@@ -43,7 +43,6 @@ class UserGateway {
     }
 
     public function getUserNbAnimePage(string $pseudo) :int {
-        global $rep, $vues;
 
         $query = "SELECT nbAnimePage FROM user WHERE pseudo = :pseudo";
         $this->con->executeQuery($query, array(
@@ -55,6 +54,28 @@ class UserGateway {
         foreach($results as $res){
             return $res['nbAnimePage'];
         }
+    }
+    public function getUserById(int $id) {
+        $query = "SELECT * FROM `user` WHERE id = :id";
+        $this->con->executeQuery($query, array(
+            ':id' => array($id, PDO::PARAM_INT)
+        ));
+        $results = $this->con->getResults();
+        foreach($results as $res){
+            return new User($res['pseudo']);
+        }
+    }
+
+    public function getUsers(){
+        $query = "SELECT * FROM user";
+        $this->con->executeQuery($query, array(
+        ));
+        $users = [];
+        $results = $this->con->getResults();
+        foreach($results as $res){
+            $users[] = new User($res['pseudo']);
+        }
+        return $users;
     }
 
 

@@ -30,6 +30,10 @@
                     Top Ending
                 </a>
             </button>
+            <button type="button" class="btn btn-outline-info" id="btnVIDEO"><a href="?action=video&opening">
+                    LA VIDEO
+                </a>
+            </button>
         </ul>
 
         <form class="form-inline my-2 my-lg-0" method="post" action="?action=search&opening">

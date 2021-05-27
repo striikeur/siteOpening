@@ -7,15 +7,9 @@ class User
     private $note;
     private $nbAnimePage;
 
-    /**
-     * User constructor.
-     * @param $pseudo
-     * @param $id
-     */
-    public function __construct($pseudo, $role)
+    public function __construct($pseudo)
     {
         $this->pseudo = $pseudo;
-        $this->role = $role;
     }
 
 

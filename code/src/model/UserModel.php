@@ -36,4 +36,13 @@ class UserModel
         $userGate = new UserGateway();
         return $userGate->getUserNbAnimePage($pseudo);
     }
+    public static function getUserById(int $id){
+        $userGate = new UserGateway();
+        return $userGate->getUserById($id);
+    }
+
+    public static function getUsers(){
+        $userGate = new UserGateway();
+        return $userGate->getUsers();
+    }
 }

@@ -15,7 +15,7 @@ class NoteGateway
                 return  null;
             }
         }
-        $query = "SELECT * FROM note";
+        $query = "SELECT * FROM note ORDER BY noteTotale DESC";
 
         $this->con->executeQuery($query, array());
         $listeNote = array();
@@ -66,7 +66,7 @@ class NoteGateway
         if(count($user) != 1 ){
             return -1;
         }
-        $query = "SELECT * FROM note WHERE idUser=:idUser";
+        $query = "SELECT * FROM note WHERE idUser=:idUser ORDER BY noteTotale DESC";
 
         $this->con->executeQuery($query, array(
             ":idUser" => array($user[0]['id'], PDO::PARAM_INT)
@@ -142,7 +142,7 @@ class NoteGateway
 
 
     $beginning = ($page - 1) * $limit;
-    $query = "SELECT * FROM note WHERE idUser=:idUser LIMIT :limit OFFSET :beginning";
+    $query = "SELECT * FROM note WHERE idUser=:idUser ORDER BY noteTotale DESC LIMIT :limit OFFSET :beginning";
 
     $this->con->executeQuery($query, array(
         ':idUser' => array($user[0]['id'], PDO::PARAM_INT),
@@ -169,9 +169,11 @@ class NoteGateway
         if(count($result) != 1 ){
             return -1;
         }
-        $query = "SELECT * FROM note WHERE idAnime=:idAnime";
+        foreach ($result as $anime)
+            $anime =  new Anime($anime['id'], $anime['name'], $anime['malLink'], $anime['season'], $anime['miniature'],  $anime['videoLink'], $anime['moyenne']);
+        $query = "SELECT * FROM note WHERE idAnime=:idAnime ORDER BY noteTotale DESC";
         $this->con->executeQuery($query, array(
-            ":idAnime" => array($result['id'], PDO::PARAM_INT)
+            ":idAnime" => array($anime->getId(), PDO::PARAM_INT)
         ));
         $listeNote = array();
         $results = $this->con->getResults();

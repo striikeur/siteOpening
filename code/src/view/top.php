@@ -38,10 +38,10 @@ if (isset($listAnime))
 
                                 ?>
                                 <label>Note de la musique :</label>
-                                <input name="noteMusique" type="number" max="5" min="0" id="NoteMusique<?=$anime->getID() ?>" required value="<?= $note->getNoteMusique()?>" oninput="noteMusiqueFunction(value, id)"/>
+                                <label><?= $note->getNoteMusique()?></label>
                                 <br>
                                 <label>Note de la Vidéo :</label>
-                                <input name="noteVideo" type="number" max="5" min="0" id="NoteVideo<?=$anime->getID() ?>" required value="<?= $note->getNoteVideo()?>" oninput="noteVideoFunction(value, id)"/>
+                                <label><?= $note->getNoteVideo()?></label>
                                 <br>
                                 <label id="NoteFinale<?=$anime->getID() ?>" name="noteTotale">Note Finale <?= $note->getNoteTotale()?> </label>
                                 <?php
@@ -159,11 +159,11 @@ else {
 }
 ?>
 
-<script src="view/bootstrap/js/jquery.js"></script>
+<!--<script src="view/bootstrap/js/jquery.js"></script>
 <script src="view/bootstrap/js/bootstrap.js"></script>
 <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script src="view/js/opening.js"></script>
+<script src="view/js/opening.js"></script>-->
 <script>
     function playOpening(id){
         let btn = document.getElementById(id);
